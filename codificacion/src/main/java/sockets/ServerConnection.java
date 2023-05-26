@@ -18,8 +18,8 @@ import org.apache.log4j.Logger;
  *
  * @author kris_
  */
-public class ServerConnection implements ActionListener{
-     private Logger log = Logger.getLogger(ServerConnection.class);
+public class ServerConnection implements ActionListener,KeyListener{
+    private Logger log = Logger.getLogger(ServerConnection.class);
     private Socket socket; 
     private JTextField tfMensaje;
     private String usuario;
@@ -48,4 +48,28 @@ public class ServerConnection implements ActionListener{
             log.error("Error al intentar enviar un mensaje: " + ex.getMessage());
         }
     }
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+      //  throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+        //throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+        if( e.getKeyCode() == KeyEvent.VK_ENTER ){
+            try {
+                salidaDatos.writeUTF(usuario + ": " + tfMensaje.getText() );
+                tfMensaje.setText("");
+            } catch (IOException ex) {
+                log.error("Error al intentar enviar un mensaje: " + ex.getMessage());
+            }
+        }
+    }
+
+   
 }

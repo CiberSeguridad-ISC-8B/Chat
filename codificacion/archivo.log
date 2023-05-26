@@ -203,3 +203,102 @@
 2023-05-26 13:44:35,081 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
 2023-05-26 13:44:37,079 [Thread-17] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
 2023-05-26 13:44:38,132 [Thread-16] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
+2023-05-26 15:09:37,490 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:10:00,587 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.36 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 15:10:00,730 [main] INFO  sockets.Server - Cliente con la IP 172.16.132.36 conectado.
+2023-05-26 15:10:00,734 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:10:29,846 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.36 en el puerto 1234 con el nombre de ususario: Juan.
+2023-05-26 15:10:30,120 [main] INFO  sockets.Server - Cliente con la IP 172.16.132.36 conectado.
+2023-05-26 15:10:30,121 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:12:03,336 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: .
+2023-05-26 15:12:03,418 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-26 15:12:03,421 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-26 15:12:03,422 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-26 15:12:03,423 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-26 15:12:19,867 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:12:56,178 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.36 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 15:12:56,727 [main] INFO  sockets.Server - Cliente con la IP 172.16.132.36 conectado.
+2023-05-26 15:12:56,735 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:13:58,471 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:14:31,407 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.36 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 15:14:31,755 [main] INFO  sockets.Server - Cliente con la IP 172.16.132.36 conectado.
+2023-05-26 15:14:31,764 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:15:22,466 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.36 en el puerto 1234 con el nombre de ususario: Juan.
+2023-05-26 15:15:22,727 [main] INFO  sockets.Server - Cliente con la IP 172.16.132.36 conectado.
+2023-05-26 15:15:22,727 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:18:46,049 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:19:21,924 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.36 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 15:19:22,244 [main] INFO  sockets.Server - Cliente con la IP 172.16.132.36 conectado.
+2023-05-26 15:19:22,253 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:19:59,661 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.36 en el puerto 1234 con el nombre de ususario: Juan.
+2023-05-26 15:19:59,795 [main] INFO  sockets.Server - Cliente con la IP 172.16.132.36 conectado.
+2023-05-26 15:19:59,797 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:21:35,539 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:21:58,315 [main] INFO  frames.Chat - Quieres conectarte a 172.20.10.2 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 15:21:58,406 [main] INFO  sockets.Server - Cliente con la IP DESKTOP-2176DU5 conectado.
+2023-05-26 15:21:58,412 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:22:30,368 [main] INFO  frames.Chat - Quieres conectarte a 172.20.10.2 en el puerto 1234 con el nombre de ususario: Juan.
+2023-05-26 15:22:30,411 [main] INFO  sockets.Server - Cliente con la IP DESKTOP-2176DU5 conectado.
+2023-05-26 15:22:30,412 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:23:32,845 [main] ERROR frames.Chat - Error al leer del stream de entrada: Connection reset
+2023-05-26 15:23:32,845 [main] ERROR frames.Chat - Error al leer del stream de entrada: Connection reset
+2023-05-26 15:25:31,063 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:26:18,591 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.36 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 15:26:19,015 [main] INFO  sockets.Server - Cliente con la IP 172.16.132.36 conectado.
+2023-05-26 15:26:19,023 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:27:08,937 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.36 en el puerto 1234 con el nombre de ususario: Juan.
+2023-05-26 15:27:09,270 [main] INFO  sockets.Server - Cliente con la IP 172.16.132.36 conectado.
+2023-05-26 15:27:09,271 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:28:15,526 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.16 en el puerto 1234 con el nombre de ususario: Juan.
+2023-05-26 15:29:45,139 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:30:07,791 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.36 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 15:30:09,016 [main] INFO  sockets.Server - Cliente con la IP 172.16.132.36 conectado.
+2023-05-26 15:30:09,025 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:36:25,074 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:36:45,600 [main] INFO  frames.Chat - Quieres conectarte a 172.132.16.36 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 15:37:38,533 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.36 en el puerto 1234 con el nombre de ususario: cRIS.
+2023-05-26 15:37:38,770 [main] INFO  sockets.Server - Cliente con la IP 172.16.132.36 conectado.
+2023-05-26 15:37:38,777 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:38:14,313 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.36 en el puerto 1234 con el nombre de ususario: jUAN1.
+2023-05-26 15:38:14,553 [main] INFO  sockets.Server - Cliente con la IP 172.16.132.36 conectado.
+2023-05-26 15:38:14,554 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:38:21,760 [Thread-0] INFO  sockets.ClientConnection - Cliente con la IP 172.16.132.36 desconectado.
+2023-05-26 15:38:22,483 [Thread-1] INFO  sockets.ClientConnection - Cliente con la IP 172.16.132.36 desconectado.
+2023-05-26 15:41:39,847 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.36 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 15:41:40,053 [main] INFO  sockets.Server - Cliente con la IP 172.16.132.36 conectado.
+2023-05-26 15:41:40,055 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:42:05,304 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.36 en el puerto 1234 con el nombre de ususario: Hector.
+2023-05-26 15:42:05,783 [main] INFO  sockets.Server - Cliente con la IP 172.16.132.36 conectado.
+2023-05-26 15:42:05,784 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:42:12,682 [Thread-2] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:42:12,683 [Thread-2] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:42:24,723 [Thread-3] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:42:24,724 [Thread-3] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:42:28,814 [Thread-2] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:42:28,815 [Thread-2] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:42:41,647 [Thread-3] INFO  sockets.ClientConnection - Cliente con la IP 172.16.132.36 desconectado.
+2023-05-26 15:42:45,194 [Thread-2] INFO  sockets.ClientConnection - Cliente con la IP 172.16.132.36 desconectado.
+2023-05-26 15:43:46,362 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.36 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 15:43:46,625 [main] INFO  sockets.Server - Cliente con la IP 172.16.132.36 conectado.
+2023-05-26 15:43:46,626 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:44:09,807 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.36 en el puerto 1234 con el nombre de ususario: Juan.
+2023-05-26 15:44:10,068 [main] INFO  sockets.Server - Cliente con la IP 172.16.132.36 conectado.
+2023-05-26 15:44:10,070 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 15:44:15,009 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:44:15,009 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:44:15,009 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:44:15,010 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:44:24,573 [Thread-5] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:44:24,574 [Thread-5] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:44:24,574 [Thread-5] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:44:24,574 [Thread-5] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:44:32,497 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:44:32,497 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:44:32,498 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:44:32,498 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:44:43,392 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:44:43,392 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:44:43,392 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:44:43,393 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 15:45:39,174 [Thread-4] INFO  sockets.ClientConnection - Cliente con la IP 172.16.132.36 desconectado.
+2023-05-26 15:45:41,145 [Thread-5] INFO  sockets.ClientConnection - Cliente con la IP 172.16.132.36 desconectado.

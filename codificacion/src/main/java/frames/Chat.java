@@ -136,17 +136,17 @@ public class Chat extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        //System.out.println("mensaje: "+this.messageToSend.getText());
+        System.out.println("mensaje: "+this.messageToSend.getText());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void messageToSendKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_messageToSendKeyReleased
         // TODO add your handling code here:
-        if(evt.getKeyCode() == KeyEvent.VK_ENTER){
+        /*if(evt.getKeyCode() == KeyEvent.VK_ENTER){
             System.out.println("mensaje: "+this.messageToSend.getText());
             this.messagesToShow.setText(this.messagesToShow.getText()+this.messageToSend.getText()+"\n");
             this.messageToSend.setText("");
             
-        }
+        }*/
     }//GEN-LAST:event_messageToSendKeyReleased
     private void inicia(){
         JPanel panel = new JPanel();
@@ -181,23 +181,17 @@ public class Chat extends javax.swing.JFrame {
         }
         //</editor-fold>
          PropertyConfigurator.configure("log4j.properties");        
-         System.out.println("Si entre run");
-        Chat c = new Chat();
-        System.out.println("Si entre run 2");
-        c.conf();
-        System.out.println("Si entre run 3");
+         Chat c = new Chat();
+         c.conf();
+       
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                System.out.println("Si entre run");
                 c.setVisible(true);
             }
         });
         c.recibirMensajesServidor();
         
-        System.out.println("Si entre run 4");
-         c.setVisible(true);
          
-        System.out.println("Si entre run 5");
         /* Create and display the form */
         
     }
@@ -224,8 +218,9 @@ public class Chat extends javax.swing.JFrame {
         }
         
         // Accion para el boton enviar
-        this.jButton1.addActionListener(new ServerConnection(socket, this.messageToSend, usuario));
-        
+        ServerConnection connection = new ServerConnection(socket, this.messageToSend, usuario);
+        this.jButton1.addActionListener(connection);
+        this.messageToSend.addKeyListener(connection);
     }
     public void recibirMensajesServidor(){
         // Obtiene el flujo de entrada del socket
