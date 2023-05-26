@@ -1,0 +1,205 @@
+2023-05-26 10:19:57,815 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 10:20:41,719 [main] INFO  frames.Chat - Quieres conectarte a 172.16.1.144 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 10:20:41,886 [main] INFO  sockets.Server - Cliente con la IP 172.16.1.144 conectado.
+2023-05-26 10:20:41,895 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 10:21:22,591 [Thread-0] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
+2023-05-26 13:14:31,349 [main] INFO  frames.Chat - Quieres conectarte a 172.16.1.144 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 13:14:31,417 [main] INFO  sockets.Server - Cliente con la IP 172.16.1.144 conectado.
+2023-05-26 13:14:31,418 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 13:14:56,385 [main] INFO  frames.Chat - Quieres conectarte a 172.16.1.144 en el puerto 1234 con el nombre de ususario: Juan.
+2023-05-26 13:14:56,479 [main] INFO  sockets.Server - Cliente con la IP 172.16.1.144 conectado.
+2023-05-26 13:14:56,482 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 13:15:01,221 [Thread-2] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:15:13,115 [Thread-2] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:15:26,263 [Thread-1] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:15:29,130 [Thread-1] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
+2023-05-26 13:15:30,210 [Thread-2] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
+2023-05-26 13:20:05,960 [main] INFO  frames.Chat - Quieres conectarte a 172.1.1.144 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 13:20:27,027 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection timed out: connect).
+2023-05-26 13:20:27,030 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-26 13:20:27,032 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-26 13:20:27,032 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-26 13:21:01,731 [main] INFO  frames.Chat - Quieres conectarte a 172.16.1.144 en el puerto 1234 con el nombre de ususario: Hector.
+2023-05-26 13:21:02,313 [main] INFO  sockets.Server - Cliente con la IP 172.16.1.144 conectado.
+2023-05-26 13:21:02,315 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 13:21:24,780 [Thread-3] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:21:24,780 [Thread-3] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:21:24,780 [Thread-3] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:21:27,478 [Thread-3] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
+2023-05-26 13:22:39,265 [main] INFO  frames.Chat - Quieres conectarte a 172.16.1.144 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 13:22:40,406 [main] INFO  sockets.Server - Cliente con la IP 172.16.1.144 conectado.
+2023-05-26 13:22:40,407 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 13:22:58,524 [main] INFO  frames.Chat - Quieres conectarte a 172.16.1.144 en el puerto 1234 con el nombre de ususario: Hector.
+2023-05-26 13:22:58,587 [main] INFO  sockets.Server - Cliente con la IP 172.16.1.144 conectado.
+2023-05-26 13:22:58,587 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 13:23:03,215 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:03,216 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:03,217 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:03,217 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:03,400 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:03,401 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:03,401 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:03,401 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:03,672 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:03,673 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:03,673 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:03,673 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:12,344 [Thread-5] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:12,345 [Thread-5] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:12,346 [Thread-5] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:12,346 [Thread-5] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:13,739 [Thread-5] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:13,739 [Thread-5] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:13,739 [Thread-5] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:13,740 [Thread-5] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:14,586 [Thread-5] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:14,587 [Thread-5] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:14,587 [Thread-5] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:14,587 [Thread-5] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:23:22,839 [Thread-5] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
+2023-05-26 13:26:42,854 [main] INFO  frames.Chat - Quieres conectarte a 172.16.1.144 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 13:26:42,924 [main] INFO  sockets.Server - Cliente con la IP 172.16.1.144 conectado.
+2023-05-26 13:26:42,924 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 13:26:57,881 [main] INFO  frames.Chat - Quieres conectarte a 172.16.1.144 en el puerto 1234 con el nombre de ususario: Juan.
+2023-05-26 13:26:57,989 [main] INFO  sockets.Server - Cliente con la IP 172.16.1.144 conectado.
+2023-05-26 13:26:57,991 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 13:27:03,517 [Thread-6] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:27:03,517 [Thread-6] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:27:03,518 [Thread-6] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:27:03,518 [Thread-6] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:27:03,519 [Thread-6] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:27:19,196 [Thread-7] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
+2023-05-26 13:27:25,135 [Thread-6] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
+2023-05-26 13:27:29,470 [Thread-4] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
+2023-05-26 13:27:44,725 [main] INFO  frames.Chat - Quieres conectarte a 172.16.1.144 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 13:27:44,817 [main] INFO  sockets.Server - Cliente con la IP 172.16.1.144 conectado.
+2023-05-26 13:27:44,818 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 13:28:01,727 [main] INFO  frames.Chat - Quieres conectarte a 172.16.1.144 en el puerto 1234 con el nombre de ususario: Juan.
+2023-05-26 13:28:01,811 [main] INFO  sockets.Server - Cliente con la IP 172.16.1.144 conectado.
+2023-05-26 13:28:01,811 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 13:28:09,400 [Thread-9] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:09,400 [Thread-9] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:09,401 [Thread-9] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:09,401 [Thread-9] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:09,401 [Thread-9] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:09,401 [Thread-9] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:09,401 [Thread-9] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:09,401 [Thread-9] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:12,585 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:12,587 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:12,587 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:12,587 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:12,587 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:12,587 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:12,588 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:12,588 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:15,742 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:15,743 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:15,743 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:15,743 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:15,743 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:15,744 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:15,744 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:15,744 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:28:22,596 [Thread-9] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
+2023-05-26 13:28:29,699 [Thread-8] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
+2023-05-26 13:30:46,912 [main] INFO  frames.Chat - Quieres conectarte a 172.16.1.144 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 13:30:47,008 [main] INFO  sockets.Server - Cliente con la IP 172.16.1.144 conectado.
+2023-05-26 13:30:47,010 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 13:31:00,714 [main] INFO  frames.Chat - Quieres conectarte a 172.16.1.144 en el puerto 1234 con el nombre de ususario: Juan.
+2023-05-26 13:31:00,777 [main] INFO  sockets.Server - Cliente con la IP 172.16.1.144 conectado.
+2023-05-26 13:31:00,777 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 13:31:05,999 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:31:06,000 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:31:06,000 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:31:06,001 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:31:06,001 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:31:06,001 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:31:06,001 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:31:06,002 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:31:06,002 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:31:06,002 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:31:18,420 [Thread-11] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
+2023-05-26 13:31:22,912 [Thread-10] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
+2023-05-26 13:32:23,222 [main] INFO  frames.Chat - Quieres conectarte a 172.16.1.144 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 13:32:23,291 [main] INFO  sockets.Server - Cliente con la IP 172.16.1.144 conectado.
+2023-05-26 13:32:23,291 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 13:32:37,170 [main] INFO  frames.Chat - Quieres conectarte a 172.16.1.144 en el puerto 1234 con el nombre de ususario: Juan.
+2023-05-26 13:32:37,260 [main] INFO  sockets.Server - Cliente con la IP 172.16.1.144 conectado.
+2023-05-26 13:32:37,261 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 13:32:45,454 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:32:45,455 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:32:45,455 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:32:45,456 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:32:45,456 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:32:45,456 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:32:45,456 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:32:45,457 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:32:45,457 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:32:45,457 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:32:45,458 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:32:45,458 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:32:52,348 [Thread-13] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
+2023-05-26 13:33:00,645 [Thread-12] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
+2023-05-26 13:40:39,956 [main] INFO  frames.Chat - Quieres conectarte a 172.16.1.144 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 13:40:40,050 [main] INFO  sockets.Server - Cliente con la IP 172.16.1.144 conectado.
+2023-05-26 13:40:40,050 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 13:41:02,872 [main] INFO  frames.Chat - Quieres conectarte a 172.16.1.144 en el puerto 1234 con el nombre de ususario: Juan.
+2023-05-26 13:41:02,966 [main] INFO  sockets.Server - Cliente con la IP 172.16.1.144 conectado.
+2023-05-26 13:41:02,970 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 13:41:08,062 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:41:08,062 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:41:08,062 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:41:08,063 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:41:08,063 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:41:08,063 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:41:08,063 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:41:08,063 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:41:08,064 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:41:08,064 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:41:08,064 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:41:08,064 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:41:08,064 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:41:08,064 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:41:23,865 [Thread-14] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
+2023-05-26 13:41:31,793 [Thread-15] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
+2023-05-26 13:44:02,109 [main] INFO  frames.Chat - Quieres conectarte a 172.16.1.144 en el puerto 1234 con el nombre de ususario: Juan.
+2023-05-26 13:44:02,245 [main] INFO  sockets.Server - Cliente con la IP 172.16.1.144 conectado.
+2023-05-26 13:44:02,245 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 13:44:17,629 [main] INFO  frames.Chat - Quieres conectarte a 172.16.1.144 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 13:44:17,805 [main] INFO  sockets.Server - Cliente con la IP 172.16.1.144 conectado.
+2023-05-26 13:44:17,806 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-26 13:44:25,964 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:25,964 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:25,964 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:25,964 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:25,965 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:25,965 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:25,965 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:25,965 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:25,965 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:25,966 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:25,966 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:25,966 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:25,966 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:25,966 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:25,967 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:25,967 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:35,080 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:35,080 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:35,081 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:35,081 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:35,081 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:35,081 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:35,081 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:35,081 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:35,081 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:35,081 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:35,081 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:35,081 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:35,081 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:35,081 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:35,081 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:35,081 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-26 13:44:37,079 [Thread-17] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
+2023-05-26 13:44:38,132 [Thread-16] INFO  sockets.ClientConnection - Cliente con la IP 172.16.1.144 desconectado.
