@@ -4,6 +4,7 @@
  */
 package sockets;
 
+import com.mycompany.codificacion.Encriptation;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
@@ -24,8 +25,9 @@ public class ServerConnection implements ActionListener,KeyListener{
     private JTextField tfMensaje;
     private String usuario;
     private DataOutputStream salidaDatos;
-    
+    private String []values;
     public ServerConnection(Socket socket, JTextField tfMensaje, String usuario) {
+        this.values = new String[2];
         this.socket = socket;
         this.tfMensaje = tfMensaje;
         this.usuario = usuario;
@@ -42,7 +44,11 @@ public class ServerConnection implements ActionListener,KeyListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         try {
-            salidaDatos.writeUTF(usuario + ": " + tfMensaje.getText() );
+            this.values = Encriptation.doEncryp(tfMensaje.getText());
+            salidaDatos.writeUTF( usuario + ": " + Encriptation.arrayToString(values) );
+            
+            
+            //salidaDatos.writeUTF(usuario + ": " + tfMensaje.getText() );
             tfMensaje.setText("");
         } catch (IOException ex) {
             log.error("Error al intentar enviar un mensaje: " + ex.getMessage());
@@ -63,7 +69,10 @@ public class ServerConnection implements ActionListener,KeyListener{
     public void keyReleased(KeyEvent e) {
         if( e.getKeyCode() == KeyEvent.VK_ENTER ){
             try {
-                salidaDatos.writeUTF(usuario + ": " + tfMensaje.getText() );
+                this.values = Encriptation.doEncryp(tfMensaje.getText());
+                salidaDatos.writeUTF( usuario + ": " + Encriptation.arrayToString(values) );
+                
+                
                 tfMensaje.setText("");
             } catch (IOException ex) {
                 log.error("Error al intentar enviar un mensaje: " + ex.getMessage());

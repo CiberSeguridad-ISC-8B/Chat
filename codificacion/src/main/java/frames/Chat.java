@@ -236,10 +236,26 @@ public class Chat extends javax.swing.JFrame {
         
         // Bucle infinito que recibe mensajes del servidor
         boolean conectado = true;
+        int cont = 0;
         while (conectado) {
             try {
+                //System.out.println("Espera");
                 mensaje = entradaDatos.readUTF();
-                this.messagesToShow.append(mensaje + System.lineSeparator());
+                //System.out.println("Listo");
+                //System.out.println("MSG-> "+mensaje);
+                String values[] = mensaje.split(": ");
+                //System.out.println("V[0]-> "+values[0]);
+                //System.out.println("V[1]-> "+values[1]);
+                
+                //elimina corchetes...[]inicial y final
+                mensaje = values[1].trim().substring(1,values[1].length()-1);
+                String val[] = mensaje.split(", ");
+                //en la posicion [0] esta el msg encriptado y en la [1] el token...
+                //System.out.println("Value[0]-> "+val[0]);
+                //System.out.println("Value[1]-> "+val[1]);
+                
+                this.messagesToShow.append(values[0] + "::::" + val[0] + System.lineSeparator());
+                
             } catch (IOException ex) {
                 log.error("Error al leer del stream de entrada: " + ex.getMessage());
                 conectado = false;

@@ -302,3 +302,38 @@
 2023-05-26 15:44:43,393 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
 2023-05-26 15:45:39,174 [Thread-4] INFO  sockets.ClientConnection - Cliente con la IP 172.16.132.36 desconectado.
 2023-05-26 15:45:41,145 [Thread-5] INFO  sockets.ClientConnection - Cliente con la IP 172.16.132.36 desconectado.
+2023-05-26 19:23:17,376 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.36 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 19:23:49,092 [main] INFO  frames.Chat - Quieres conectarte a 172.16.132.36 en el puerto 1234 con el nombre de ususario: Juan.
+2023-05-26 23:51:35,723 [main] INFO  frames.Chat - Quieres conectarte a 192.168.1.13 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-26 23:52:06,734 [main] INFO  frames.Chat - Quieres conectarte a 192.168.1.13 en el puerto 1234 con el nombre de ususario: Juan.
+2023-05-26 23:53:55,500 [main] INFO  frames.Chat - Quieres conectarte a 192.168.1.13 en el puerto 1234 con el nombre de ususario: cRIS.
+2023-05-26 23:54:25,581 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: jUAN.
+2023-05-27 09:21:10,113 [main] INFO  frames.Chat - Quieres conectarte a 192.168.1.23 en el puerto 1234 con el nombre de ususario: CRIS.
+2023-05-27 09:21:39,626 [main] INFO  frames.Chat - Quieres conectarte a 192.168.1.23 en el puerto 1234 con el nombre de ususario: Juan.
+2023-05-27 11:00:40,852 [main] INFO  frames.Chat - Quieres conectarte a 27.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-27 11:01:01,936 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection timed out: connect).
+2023-05-27 11:01:01,941 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-27 11:01:01,944 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-27 11:01:01,944 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-27 12:30:44,506 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 14:01:54,795 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 14:31:34,534 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 14:32:18,828 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 14:35:25,422 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 14:37:10,307 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 14:41:57,695 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 14:48:24,070 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 14:50:06,537 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 14:56:24,788 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 14:58:01,265 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 14:59:51,221 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: CRIS.
+2023-05-28 15:01:55,054 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 15:05:46,105 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 15:07:28,932 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 15:08:30,423 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 15:09:43,680 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 15:11:46,191 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 15:13:09,783 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 15:14:15,048 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 15:25:11,797 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 15:26:44,895 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
