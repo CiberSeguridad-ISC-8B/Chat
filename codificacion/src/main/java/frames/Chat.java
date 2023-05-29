@@ -5,12 +5,16 @@
 package frames;
 
 import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.FontFormatException;
 import java.awt.RenderingHints.Key;
 import java.awt.event.KeyEvent;
 import java.io.DataInputStream;
+import java.io.File;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.logging.Level;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -59,32 +63,37 @@ public class Chat extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        messageToSend = new javax.swing.JTextField();
+        enviar = new javax.swing.JButton();
+        mensaje = new javax.swing.JTextField();
+        jPanel5 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jSpinner2 = new javax.swing.JSpinner();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Chat ");
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 255), 10), "Chat", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 0))); // NOI18N
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 0), 10), "Chat", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         jPanel1.setLayout(new java.awt.BorderLayout());
 
         jPanel4.setLayout(new javax.swing.BoxLayout(jPanel4, javax.swing.BoxLayout.LINE_AXIS));
 
         messagesToShow.setEditable(false);
-        messagesToShow.setBackground(new java.awt.Color(204, 255, 255));
+        messagesToShow.setBackground(new java.awt.Color(0, 0, 0));
         messagesToShow.setColumns(20);
         messagesToShow.setRows(5);
-        messagesToShow.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Messages", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 0))); // NOI18N
+        messagesToShow.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "Messages", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         jScrollPane1.setViewportView(messagesToShow);
 
         jPanel4.add(jScrollPane1);
 
         jScrollPane2.setPreferredSize(new java.awt.Dimension(132, 105));
 
-        jTextArea1.setBackground(new java.awt.Color(204, 255, 255));
+        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
-        jTextArea1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Decoding", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 0))); // NOI18N
+        jTextArea1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Decoding", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         jTextArea1.setPreferredSize(new java.awt.Dimension(130, 103));
         jScrollPane2.setViewportView(jTextArea1);
 
@@ -97,49 +106,73 @@ public class Chat extends javax.swing.JFrame {
 
         jPanel3.setLayout(new java.awt.BorderLayout());
 
-        jButton1.setText("Enviar");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        enviar.setText("Enviar");
+        enviar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        enviar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                enviarActionPerformed(evt);
             }
         });
-        jPanel3.add(jButton1, java.awt.BorderLayout.LINE_END);
+        jPanel3.add(enviar, java.awt.BorderLayout.LINE_END);
 
-        messageToSend.setBackground(new java.awt.Color(153, 255, 153));
-        messageToSend.setToolTipText("");
-        messageToSend.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Ingresa mensaje", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 0))); // NOI18N
-        messageToSend.addActionListener(new java.awt.event.ActionListener() {
+        mensaje.setBackground(new java.awt.Color(0, 0, 0));
+        mensaje.setForeground(new java.awt.Color(0, 255, 0));
+        mensaje.setToolTipText("");
+        mensaje.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "Ingresa mensaje", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
+        mensaje.setCaretColor(new java.awt.Color(255, 255, 255));
+        mensaje.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                messageToSendActionPerformed(evt);
+                mensajeActionPerformed(evt);
             }
         });
-        messageToSend.addKeyListener(new java.awt.event.KeyAdapter() {
+        mensaje.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                messageToSendKeyReleased(evt);
+                mensajeKeyReleased(evt);
             }
         });
-        jPanel3.add(messageToSend, java.awt.BorderLayout.CENTER);
+        jPanel3.add(mensaje, java.awt.BorderLayout.CENTER);
 
         jPanel2.add(jPanel3);
 
         jPanel1.add(jPanel2, java.awt.BorderLayout.PAGE_END);
+
+        jPanel5.setLayout(new javax.swing.BoxLayout(jPanel5, javax.swing.BoxLayout.LINE_AXIS));
+
+        jPanel7.setBackground(new java.awt.Color(0, 0, 0));
+
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Ingresa el numero de ciclos a ejecutarse (4-11)");
+        jPanel7.add(jLabel2);
+
+        jSpinner2.setModel(new javax.swing.SpinnerNumberModel(4, 4, 11, 1));
+        jSpinner2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel7.add(jSpinner2);
+
+        jPanel5.add(jPanel7);
+
+        jPanel1.add(jPanel5, java.awt.BorderLayout.PAGE_START);
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void messageToSendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_messageToSendActionPerformed
+    private void mensajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mensajeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_messageToSendActionPerformed
+        
+        
+        //mensaje.setFont(font);
+        //add(mensaje);
+    }//GEN-LAST:event_mensajeActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void enviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enviarActionPerformed
         // TODO add your handling code here:
-        System.out.println("mensaje: "+this.messageToSend.getText());
-    }//GEN-LAST:event_jButton1ActionPerformed
+        System.out.println("mensaje: "+this.mensaje.getText());
+        //Font font = new Font("Orbitron-Medium", Font.PLAIN, 20);
+        //enviar.setFont(font);
+    }//GEN-LAST:event_enviarActionPerformed
 
-    private void messageToSendKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_messageToSendKeyReleased
+    private void mensajeKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_mensajeKeyReleased
         // TODO add your handling code here:
         /*if(evt.getKeyCode() == KeyEvent.VK_ENTER){
             System.out.println("mensaje: "+this.messageToSend.getText());
@@ -147,7 +180,7 @@ public class Chat extends javax.swing.JFrame {
             this.messageToSend.setText("");
             
         }*/
-    }//GEN-LAST:event_messageToSendKeyReleased
+    }//GEN-LAST:event_mensajeKeyReleased
     private void inicia(){
         JPanel panel = new JPanel();
         JButton boton = new JButton();
@@ -191,7 +224,17 @@ public class Chat extends javax.swing.JFrame {
         });
         c.recibirMensajesServidor();
         
-         
+        File fuente=new File("src/main/java/fonts/Courgette-Regular.ttf");
+        Font font=null; 
+        try {
+            font = Font.createFont(Font.TRUETYPE_FONT,fuente);
+        } catch (FontFormatException ex) {
+            java.util.logging.Logger.getLogger(Chat.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            java.util.logging.Logger.getLogger(Chat.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        //this.mensaje.setFont(font);
         /* Create and display the form */
         
     }
@@ -218,9 +261,9 @@ public class Chat extends javax.swing.JFrame {
         }
         
         // Accion para el boton enviar
-        ServerConnection connection = new ServerConnection(socket, this.messageToSend, usuario);
-        this.jButton1.addActionListener(connection);
-        this.messageToSend.addKeyListener(connection);
+        ServerConnection connection = new ServerConnection(socket, this.mensaje, usuario);
+        this.enviar.addActionListener(connection);
+        this.mensaje.addKeyListener(connection);
     }
     public void recibirMensajesServidor(){
         // Obtiene el flujo de entrada del socket
@@ -271,15 +314,19 @@ public class Chat extends javax.swing.JFrame {
      */
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton enviar;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JSpinner jSpinner2;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField messageToSend;
+    private javax.swing.JTextField mensaje;
     private javax.swing.JTextArea messagesToShow;
     // End of variables declaration//GEN-END:variables
 }
