@@ -211,6 +211,7 @@ public class Encriptation {
             
            System.out.println("Dir "+vecDirTrash.get(i)+"-> "+value+"["+vecDir.get(i)+"] --- Pos "+vecPosTrash.get(i)+"->"+value2+"["+vecPos.get(i)+"]");
         }
+        srtTrash.set( 299, findValueChar(vueltas) );
     }
     
     
