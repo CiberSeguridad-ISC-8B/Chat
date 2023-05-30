@@ -14,6 +14,8 @@ import java.net.UnknownHostException;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JScrollBar;
+import javax.swing.JScrollPane;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import sockets.ConfigurationWindow;
@@ -66,8 +68,10 @@ public class Chat extends javax.swing.JFrame {
         setTitle("Chat ");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 255), 10), "Chat", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 0))); // NOI18N
+        jPanel1.setAutoscrolls(true);
         jPanel1.setLayout(new java.awt.BorderLayout());
 
+        jPanel4.setAutoscrolls(true);
         jPanel4.setLayout(new javax.swing.BoxLayout(jPanel4, javax.swing.BoxLayout.LINE_AXIS));
 
         messagesToShow.setEditable(false);
@@ -79,13 +83,17 @@ public class Chat extends javax.swing.JFrame {
 
         jPanel4.add(jScrollPane1);
 
+        jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
         jScrollPane2.setPreferredSize(new java.awt.Dimension(132, 105));
 
         jTextArea1.setBackground(new java.awt.Color(204, 255, 255));
         jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(20);
+        jTextArea1.setWrapStyleWord(true);
         jTextArea1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Decoding", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 0))); // NOI18N
-        jTextArea1.setPreferredSize(new java.awt.Dimension(130, 103));
+        jTextArea1.setMaximumSize(new java.awt.Dimension(2147483647, 200));
+        jTextArea1.setMinimumSize(new java.awt.Dimension(11, 200));
         jScrollPane2.setViewportView(jTextArea1);
 
         jPanel4.add(jScrollPane2);
@@ -218,9 +226,17 @@ public class Chat extends javax.swing.JFrame {
         }
         
         // Accion para el boton enviar
-        ServerConnection connection = new ServerConnection(socket, this.messageToSend, usuario);
+        ServerConnection connection = new ServerConnection(socket, this.messageToSend, usuario,this.jTextArea1);
         this.jButton1.addActionListener(connection);
         this.messageToSend.addKeyListener(connection);
+        //this.jTextArea1.setLineWrap(true);
+        //this.jTextArea1.setWrapStyleWord(true);
+        //JScrollPane scrollPane = new JScrollPane(this.jTextArea1);
+        //scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+        //scrollPane.setBounds(0,0,340,340);
+        //this.jTextArea1.add(scrollPane);
+        //this.jScrollPane2.setPreferredSize(this.jTextArea1.getPreferredScrollableViewportSize());
+
     }
     public void recibirMensajesServidor(){
         // Obtiene el flujo de entrada del socket

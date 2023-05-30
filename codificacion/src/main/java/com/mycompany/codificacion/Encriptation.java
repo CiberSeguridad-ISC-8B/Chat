@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Hashtable;
 import java.util.Map;
+import javax.swing.JTextArea;
 /**
  *
  * @author kris_
@@ -28,14 +29,25 @@ public class Encriptation {
     public static String nuevaCadena;
     public static String textEncryp, textTrash;
     public static char nuevoCaracter;
+    public static JTextArea decoding;
     public static Hashtable<Character, Integer> c = new Hashtable<>();
     /**
      * @param args the command line arguments
      */
-    public static String[] doEncryp(String phrase){
+    public static String[] doEncryp(String phrase,JTextArea dec){
+        //reniciar variables...
+        codigoOri.clear();
+        codigoRan.clear();
+        caracterASCII.clear();
+        vecPos.clear();
+        vecDir.clear();
+        srtTrash.clear();
+        encryp.clear();
+        vecPosTrash.clear();
+        vecDirTrash.clear();
         diccionary();
         int vueltas = 5;
-        
+        decoding = dec;
         String frase = phrase;
         
         // TODO code application logic here
@@ -46,6 +58,7 @@ public class Encriptation {
        
         System.out.println("Vector Original");
         System.out.println(codigoOri);
+        decoding.setText("Vector Original"+"\n"+codigoOri+"\n");
         suffle(vueltas);
         
         //si las listas son iguales repetir el suffle se vuelve hacer
@@ -83,8 +96,8 @@ public class Encriptation {
     }
     public static void main(String[] args) {
         
-        String value[] = doEncryp("Hola Mundo");
-        System.out.println("Value -> "+arrayToString(value));
+        //String value[] = doEncryp("Hola Mundo");
+        //System.out.println("Value -> "+arrayToString(value));
     }
     public static String arrayToString(String []values){
         return Arrays.toString(values);
@@ -288,7 +301,9 @@ public class Encriptation {
         
         for(int i = 0; i < codigoRan.size(); i++){
             System.out.print(i+": "+codigoRan.get(i)+" | ");
+            decoding.append(i+": "+codigoRan.get(i)+" | ");
         }
+        decoding.append("\n");
         System.out.println("");
     }
     //llenado del vector en codigo ASCII
@@ -346,7 +361,7 @@ public class Encriptation {
                     j++;
                 }
                 System.out.println("Lista desplazada a la izquierda: pos = "+pos);
-                
+                decoding.append("Lista desplazada a la izquierda: pos = "+pos+"\n");
             }else if(dir == 1){// recorrido derecha 
                 //Recorro el vector las posiciones a la derecha
                 while(j < pos){
@@ -362,7 +377,7 @@ public class Encriptation {
                     j++;
                 }
                 System.out.println("Lista desplazada a la derecha: pos = "+pos);
-                
+                decoding.append("Lista desplazada a la derecha: pos = "+pos+"\n");
             }
             formatPretty();
         }
