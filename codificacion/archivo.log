@@ -337,6 +337,7 @@
 2023-05-28 15:14:15,048 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
 2023-05-28 15:25:11,797 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
 2023-05-28 15:26:44,895 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+<<<<<<< HEAD
 2023-05-28 15:44:34,971 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: JuCa.
 2023-05-28 16:10:25,825 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: JuCa.
 2023-05-30 15:50:06,525 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: .
@@ -344,3 +345,544 @@
 2023-05-30 15:50:06,552 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
 2023-05-30 15:50:06,552 [main] ERROR frames.Chat - El socket no se creo correctamente. 
 2023-05-30 15:50:06,552 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+=======
+<<<<<<< HEAD
+2023-05-28 17:14:45,048 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Sam.
+2023-05-28 17:14:45,097 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-28 17:14:45,098 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-28 17:14:45,100 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-28 17:14:45,100 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-28 21:59:12,119 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Sam.
+2023-05-28 21:59:12,146 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-28 21:59:12,148 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-28 21:59:12,150 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-28 21:59:12,150 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-28 23:50:33,726 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-28 23:50:33,765 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-28 23:50:33,773 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-28 23:50:33,773 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-28 23:50:33,774 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-28 23:51:34,872 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-28 23:51:34,891 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-28 23:51:34,891 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-28 23:51:34,892 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-28 23:51:34,892 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-28 23:52:21,285 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-28 23:52:21,306 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-28 23:52:21,307 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-28 23:52:21,307 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-28 23:52:21,308 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-28 23:53:00,539 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-28 23:53:00,558 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-28 23:53:00,558 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-28 23:53:00,560 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-28 23:53:00,560 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-28 23:55:55,375 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-28 23:55:55,392 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-28 23:55:55,393 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-28 23:55:55,394 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-28 23:55:55,394 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-28 23:56:48,999 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-28 23:56:49,021 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-28 23:56:49,022 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-28 23:56:49,023 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-28 23:56:49,023 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:03:24,048 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-29 00:03:24,071 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-29 00:03:24,072 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-29 00:03:24,072 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:03:24,072 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:08:23,528 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-29 00:08:23,548 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-29 00:08:23,549 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-29 00:08:23,549 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:08:23,549 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:10:33,825 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-29 00:10:33,845 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-29 00:10:33,846 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-29 00:10:33,846 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:10:33,846 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:12:38,460 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-29 00:12:38,486 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-29 00:12:38,487 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-29 00:12:38,487 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:12:38,488 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:13:10,733 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-29 00:13:10,749 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-29 00:13:10,749 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-29 00:13:10,750 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:13:10,750 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:14:52,982 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-29 00:14:53,006 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-29 00:14:53,007 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-29 00:14:53,007 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:14:53,007 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:40:03,551 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-29 00:40:03,574 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-29 00:40:03,574 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-29 00:40:03,575 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:40:03,575 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:42:39,135 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-29 00:42:39,156 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-29 00:42:39,157 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-29 00:42:39,157 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:42:39,157 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:45:25,079 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-29 00:45:25,095 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-29 00:45:25,096 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-29 00:45:25,096 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:45:25,096 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:46:46,974 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-29 00:46:46,997 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-29 00:46:46,998 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-29 00:46:46,998 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:46:46,998 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:47:52,057 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-29 00:47:52,074 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-29 00:47:52,075 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-29 00:47:52,075 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:47:52,075 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:56:18,594 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-29 00:56:18,621 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-29 00:56:18,621 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-29 00:56:18,622 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:56:18,622 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:58:11,533 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-29 00:58:11,557 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-29 00:58:11,561 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-29 00:58:11,562 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 00:58:11,562 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 01:01:16,016 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-29 01:01:16,034 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-29 01:01:16,034 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-29 01:01:16,035 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 01:01:16,035 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 01:03:00,166 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-29 01:03:00,181 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-29 01:03:00,181 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-29 01:03:00,182 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-29 01:03:00,182 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:57:39,697 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: .
+2023-05-30 15:57:39,715 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-30 15:57:39,716 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-30 15:57:39,716 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:57:39,716 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+=======
+2023-05-28 15:45:41,920 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-28 22:47:57,646 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: cRIS.
+2023-05-28 22:49:51,603 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cros.
+2023-05-29 15:01:19,978 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 15:01:44,762 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-29 15:01:45,039 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 15:01:45,057 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 15:04:02,473 [Thread-0] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 15:04:53,685 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-29 15:04:53,760 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 15:04:53,761 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 15:04:59,244 [Thread-1] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:06:15,575 [Thread-1] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 15:07:18,560 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-29 15:07:18,588 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 15:07:18,589 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 15:07:25,756 [Thread-2] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:07:25,756 [Thread-2] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:07:29,973 [Thread-2] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 15:08:06,479 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-29 15:08:06,508 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 15:08:06,508 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 15:08:12,849 [Thread-3] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 15:08:58,376 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-29 15:08:58,404 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 15:08:58,404 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 15:09:03,821 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:09:03,822 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:09:03,822 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:09:03,822 [Thread-4] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:10:55,421 [Thread-4] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 15:14:00,725 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-29 15:14:00,740 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 15:14:00,741 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 15:14:04,907 [Thread-5] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 15:16:21,153 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-29 15:16:21,180 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 15:16:21,181 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 15:16:26,833 [Thread-6] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:16:26,833 [Thread-6] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:16:26,833 [Thread-6] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:16:26,833 [Thread-6] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:16:26,833 [Thread-6] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:16:26,834 [Thread-6] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:16:57,706 [Thread-6] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 15:17:49,081 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-29 15:17:49,097 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 15:17:49,098 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 15:17:54,454 [Thread-7] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:17:54,454 [Thread-7] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:17:54,454 [Thread-7] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:17:54,454 [Thread-7] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:17:54,454 [Thread-7] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:17:54,455 [Thread-7] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:17:54,455 [Thread-7] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:18:07,034 [Thread-7] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 15:22:23,667 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: CRis.
+2023-05-29 15:22:23,683 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 15:22:23,683 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 15:22:31,347 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:22:31,347 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:22:31,347 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:22:31,347 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:22:31,347 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:22:31,348 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:22:31,348 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:22:31,348 [Thread-8] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:22:43,886 [Thread-8] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 15:23:26,910 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-29 15:23:26,927 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 15:23:26,928 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 15:23:43,384 [Thread-9] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 15:25:01,779 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-29 15:25:01,796 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 15:25:01,797 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 15:25:07,107 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:25:07,107 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:25:07,107 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:25:07,107 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:25:07,107 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:25:07,108 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:25:07,108 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:25:07,108 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:25:07,108 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:25:07,108 [Thread-10] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:27:04,552 [Thread-10] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 15:28:16,683 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-29 15:28:16,699 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 15:28:16,700 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 15:28:22,513 [Thread-11] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:28:22,513 [Thread-11] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:28:22,513 [Thread-11] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:28:22,513 [Thread-11] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:28:22,513 [Thread-11] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:28:22,513 [Thread-11] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:28:22,514 [Thread-11] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:28:22,514 [Thread-11] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:28:22,514 [Thread-11] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:28:22,514 [Thread-11] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:28:22,514 [Thread-11] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:28:41,172 [Thread-11] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 15:42:38,459 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-29 15:42:38,599 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 15:42:38,603 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 15:42:44,117 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:42:44,118 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:42:44,119 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:42:44,119 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:42:44,120 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:42:44,121 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:42:44,121 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:42:44,122 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:42:44,123 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:42:44,124 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:42:44,124 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:42:44,125 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:43:00,442 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:43:00,444 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:43:00,444 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:43:00,445 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:43:00,446 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:43:00,446 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:43:00,447 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:43:00,448 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:43:00,448 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:43:00,449 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:43:00,450 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:43:00,450 [Thread-12] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:43:12,864 [Thread-12] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 15:45:34,172 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-29 15:45:34,216 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 15:45:34,217 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 15:45:38,835 [Thread-13] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:45:38,835 [Thread-13] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:45:38,836 [Thread-13] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:45:38,837 [Thread-13] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:45:38,837 [Thread-13] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:45:38,838 [Thread-13] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:45:38,838 [Thread-13] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:45:38,838 [Thread-13] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:45:38,839 [Thread-13] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:45:38,839 [Thread-13] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:45:38,839 [Thread-13] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:45:38,840 [Thread-13] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:45:38,840 [Thread-13] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 15:46:02,120 [Thread-13] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 23:46:11,217 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-29 23:46:11,294 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 23:46:11,298 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 23:46:16,886 [Thread-14] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:46:16,887 [Thread-14] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:46:16,887 [Thread-14] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:46:16,887 [Thread-14] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:46:16,888 [Thread-14] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:46:16,888 [Thread-14] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:46:16,889 [Thread-14] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:46:16,889 [Thread-14] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:46:16,889 [Thread-14] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:46:16,889 [Thread-14] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:46:16,890 [Thread-14] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:46:16,890 [Thread-14] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:46:16,890 [Thread-14] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:46:16,890 [Thread-14] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:47:53,800 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-29 23:47:53,877 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 23:47:53,878 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 23:47:59,900 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:47:59,901 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:47:59,901 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:47:59,901 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:47:59,902 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:47:59,902 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:47:59,902 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:47:59,902 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:47:59,903 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:47:59,903 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:47:59,903 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:47:59,903 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:47:59,904 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:47:59,904 [Thread-15] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:49:35,688 [Thread-15] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 23:49:37,916 [Thread-14] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 23:50:13,890 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: User.
+2023-05-29 23:50:13,961 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 23:50:13,963 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 23:50:18,763 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:50:18,764 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:50:18,764 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:50:18,766 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:50:18,766 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:50:18,766 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:50:18,766 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:50:18,766 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:50:18,766 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:50:18,767 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:50:18,767 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:50:18,768 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:50:18,768 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:50:18,769 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:50:18,769 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:50:18,769 [Thread-16] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:50:25,342 [Thread-16] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 23:52:49,950 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: cRIS.
+2023-05-29 23:52:50,026 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 23:52:50,027 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 23:52:55,833 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:52:55,833 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:52:55,834 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:52:55,834 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:52:55,835 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:52:55,835 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:52:55,835 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:52:55,836 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:52:55,836 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:52:55,836 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:52:55,837 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:52:55,837 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:52:55,837 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:52:55,837 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:52:55,838 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:52:55,839 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:52:55,839 [Thread-17] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:03,027 [Thread-17] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 23:53:35,173 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-29 23:53:35,259 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 23:53:35,260 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 23:53:40,298 [Thread-18] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:40,298 [Thread-18] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:40,299 [Thread-18] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:40,299 [Thread-18] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:40,299 [Thread-18] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:40,299 [Thread-18] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:40,300 [Thread-18] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:40,300 [Thread-18] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:40,300 [Thread-18] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:40,301 [Thread-18] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:40,301 [Thread-18] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:40,302 [Thread-18] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:40,302 [Thread-18] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:40,302 [Thread-18] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:40,302 [Thread-18] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:40,303 [Thread-18] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:40,303 [Thread-18] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:40,303 [Thread-18] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:53:48,713 [Thread-18] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 23:54:47,972 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: CROS.
+2023-05-29 23:54:48,048 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 23:54:48,049 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 23:54:54,516 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:54:54,516 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:54:54,517 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:54:54,517 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:54:54,517 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:54:54,518 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:54:54,518 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:54:54,518 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:54:54,518 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:54:54,519 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:54:54,519 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:54:54,519 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:54:54,520 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:54:54,520 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:54:54,520 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:54:54,520 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:54:54,520 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:54:54,520 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:54:54,521 [Thread-19] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:55:04,333 [Thread-19] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 23:55:56,214 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: cris.
+2023-05-29 23:55:56,300 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 23:55:56,301 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 23:56:02,262 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,262 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,263 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,263 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,263 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,264 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,265 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,265 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,265 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,265 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,265 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,265 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,265 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,266 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,266 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,266 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,266 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,266 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,266 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:02,267 [Thread-20] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-29 23:56:06,112 [Thread-20] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 23:57:05,206 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: cris.
+2023-05-29 23:57:05,275 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 23:57:05,276 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 23:57:20,206 [Thread-21] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 23:57:37,214 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: c.
+2023-05-29 23:57:37,278 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 23:57:37,279 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 23:57:54,524 [Thread-22] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 23:58:12,547 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: c.
+2023-05-29 23:58:12,629 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 23:58:12,630 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 23:58:31,275 [Thread-23] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 23:59:08,720 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: cr.
+2023-05-29 23:59:08,792 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 23:59:08,793 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-29 23:59:27,869 [Thread-24] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-29 23:59:52,074 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: c.
+2023-05-29 23:59:52,140 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-29 23:59:52,141 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-30 00:00:07,249 [Thread-25] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-30 00:00:27,969 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: c.
+2023-05-30 00:00:28,024 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-05-30 00:00:28,025 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-05-30 00:00:47,336 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,336 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,337 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,337 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,337 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,337 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,338 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,338 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,338 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,338 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,338 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,339 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,339 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,339 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,339 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,340 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,340 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,340 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,340 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,341 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,341 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,341 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,341 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,342 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,342 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:00:47,342 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,638 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,638 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,639 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,639 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,639 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,639 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,640 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,640 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,640 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,640 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,641 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,641 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,641 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,642 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,642 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,642 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,642 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,642 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,642 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,643 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,643 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,643 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,643 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,643 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,644 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:13,644 [Thread-26] ERROR sockets.ClientConnection - Error al enviar mensaje al cliente (Socket closed).
+2023-05-30 00:01:26,882 [Thread-26] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-05-30 15:24:15,038 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-30 15:24:36,113 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection timed out: connect).
+2023-05-30 15:24:36,119 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-30 15:24:36,121 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:24:36,122 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:27:27,969 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-30 15:27:49,040 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection timed out: connect).
+2023-05-30 15:27:49,041 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-30 15:27:49,042 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:27:49,042 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:30:17,197 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103  en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-30 15:30:17,215 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (74.235.27.103 ).
+2023-05-30 15:30:17,216 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-30 15:30:17,217 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:30:17,217 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:30:59,021 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-30 15:31:20,068 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection timed out: connect).
+2023-05-30 15:31:20,072 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-30 15:31:20,074 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:31:20,075 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:35:08,720 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-30 15:35:29,756 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection timed out: connect).
+2023-05-30 15:35:29,758 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-30 15:35:29,759 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:35:29,759 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:36:41,372 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-30 15:37:02,414 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection timed out: connect).
+2023-05-30 15:37:02,416 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-30 15:37:02,417 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:37:02,417 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:39:24,680 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-30 15:39:45,723 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection timed out: connect).
+2023-05-30 15:39:45,725 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-30 15:39:45,726 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:39:45,726 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:40:22,379 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-30 15:40:43,421 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection timed out: connect).
+2023-05-30 15:40:43,425 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-30 15:40:43,427 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:40:43,427 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:48:25,005 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
+>>>>>>> cris
+2023-05-30 16:14:19,043 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: a.
+2023-05-30 16:14:19,060 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-30 16:14:19,061 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-30 16:14:19,061 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 16:14:19,061 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 16:16:29,837 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-30 16:17:09,896 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+>>>>>>> 7d1e5661676c3c3385d24132fdbf956365fc9434
