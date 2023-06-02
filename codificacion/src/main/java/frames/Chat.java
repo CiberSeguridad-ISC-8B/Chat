@@ -4,6 +4,7 @@
  */
 package frames;
 
+import com.mycompany.codificacion.Codificacion;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.FontFormatException;
@@ -86,6 +87,8 @@ public class Chat extends javax.swing.JFrame {
         messagesToShow.setEditable(false);
         messagesToShow.setBackground(new java.awt.Color(0, 0, 0));
         messagesToShow.setColumns(20);
+        messagesToShow.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        messagesToShow.setForeground(new java.awt.Color(51, 255, 51));
         messagesToShow.setRows(5);
         messagesToShow.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "Messages", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         jScrollPane1.setViewportView(messagesToShow);
@@ -97,6 +100,7 @@ public class Chat extends javax.swing.JFrame {
 
         jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
         jTextArea1.setColumns(20);
+        jTextArea1.setForeground(new java.awt.Color(0, 255, 51));
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(20);
         jTextArea1.setWrapStyleWord(true);
@@ -109,9 +113,10 @@ public class Chat extends javax.swing.JFrame {
 
         jPanel1.add(jPanel4, java.awt.BorderLayout.CENTER);
 
-        jPanel2.setPreferredSize(new java.awt.Dimension(400, 50));
+        jPanel2.setPreferredSize(new java.awt.Dimension(400, 66));
         jPanel2.setLayout(new javax.swing.BoxLayout(jPanel2, javax.swing.BoxLayout.LINE_AXIS));
 
+        jPanel3.setPreferredSize(new java.awt.Dimension(136, 66));
         jPanel3.setLayout(new java.awt.BorderLayout());
 
         enviar.setText("Enviar");
@@ -124,10 +129,12 @@ public class Chat extends javax.swing.JFrame {
         jPanel3.add(enviar, java.awt.BorderLayout.LINE_END);
 
         mensaje.setBackground(new java.awt.Color(0, 0, 0));
+        mensaje.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         mensaje.setForeground(new java.awt.Color(0, 255, 0));
         mensaje.setToolTipText("");
         mensaje.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder(""), "Ingresa mensaje", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         mensaje.setCaretColor(new java.awt.Color(255, 255, 255));
+        mensaje.setPreferredSize(new java.awt.Dimension(64, 66));
         mensaje.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mensajeActionPerformed(evt);
@@ -314,8 +321,8 @@ public class Chat extends javax.swing.JFrame {
                 //en la posicion [0] esta el msg encriptado y en la [1] el token...
                 //System.out.println("Value[0]-> "+val[0]);
                 //System.out.println("Value[1]-> "+val[1]);
-                
-                this.messagesToShow.append(values[0] + "::::" + val[0] + System.lineSeparator());
+                String value = Codificacion.codification(val[ 1 ], val[ 0 ]);
+                this.messagesToShow.append(values[0] + " :::: " + value + System.lineSeparator());
                 
             } catch (IOException ex) {
                 log.error("Error al leer del stream de entrada: " + ex.getMessage());

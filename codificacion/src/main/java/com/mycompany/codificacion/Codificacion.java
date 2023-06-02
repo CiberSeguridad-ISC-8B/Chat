@@ -36,17 +36,19 @@ public class Codificacion {
     public static Hashtable<Character, Integer> c = new Hashtable<>();
     
     public static void main(String[] args) {
-        codification();
+        //codification();
     }
     
     //Ejecuta la codificación del texto encriptado
-    public static void codification(){
+    public static String codification(String token,String messagehidden){
         //limpiamos variables y listas
         clear();
         //Cargo nuestro diccionario
         //textTrash = token;
-        textTrash ="A9N;mGy3V'dY%\\L8FBmNjd~x2%a=b19bdMFR8F;bXcneNT)}p<!%pX_2@},W/P%s)Q;m_>t%z']y;O>YWEWf(a`l(Mp>h)Gp;E{~qd@1jNB{\\F#;k,qc~C!x>ha+#hz(.l{ok3:*klFOVPRr?gBPdo`s_Y5hi&4[tBJSP=H_V/U2}t\\02:(W}#z|^4\"?7~qJftQ<7itJuq:tj1#K:$Y-H?a[c@#UGn7&l/d=tyc}ca4,HSs:FN\"/&c#\\i]>LV6'Q-jktVI\\91A'pQ!`FP0\\a+jBm%<#/6_DG0B`|X)1DX-bD.t?./&XE!5Ck?fR!)\"lE=riaW4sOB~DdpXSq;*2C^\"X(:xt}OI";
-        textEncryp = "0000100000011011110101000001011100100011001001011101010000100100001001100001111100100010000110010001101111010100000010010001011100100011101111101111011000011011001010010010010100101001111000101110001011100010";
+        //textTrash ="A9N;mGy3V'dY%\\L8FBmNjd~x2%a=b19bdMFR8F;bXcneNT)}p<!%pX_2@},W/P%s)Q;m_>t%z']y;O>YWEWf(a`l(Mp>h)Gp;E{~qd@1jNB{\\F#;k,qc~C!x>ha+#hz(.l{ok3:*klFOVPRr?gBPdo`s_Y5hi&4[tBJSP=H_V/U2}t\\02:(W}#z|^4\"?7~qJftQ<7itJuq:tj1#K:$Y-H?a[c@#UGn7&l/d=tyc}ca4,HSs:FN\"/&c#\\i]>LV6'Q-jktVI\\91A'pQ!`FP0\\a+jBm%<#/6_DG0B`|X)1DX-bD.t?./&XE!5Ck?fR!)\"lE=riaW4sOB~DdpXSq;*2C^\"X(:xt}OI";
+        //textEncryp = "0000100000011011110101000001011100100011001001011101010000100100001001100001111100100010000110010001101111010100000010010001011100100011101111101111011000011011001010010010010100101001111000101110001011100010";
+        textTrash = token;
+        textEncryp = messagehidden;
         bin=textEncryp;
         diccionary();//Llenamos nuestro diccionario
         //funcion de llenado del codigo ASCII el vector original con el vector 
@@ -71,6 +73,8 @@ public class Codificacion {
         System.out.println("Valor del caracter -> "+car+" es "+findValueInt(car));*/
         //System.out.println(textTrash);
         //System.out.println("Caracter @ -> "+findValueInt('@'));
+        System.out.println("Mensaje: "+mensaje);
+        return mensaje;
     }
     
     //Encontrar el numero para convertirlo en caracter
@@ -79,8 +83,10 @@ public class Codificacion {
         for(int i = 0; i < vecDecimales.size(); i++){
             posVecASCII = codigoRan.indexOf(vecDecimales.get(i));
             System.out.print((char)posVecASCII);
+            mensaje += (char)posVecASCII;
         }
         System.out.println("");
+        
     }
     
     
@@ -203,7 +209,7 @@ public class Codificacion {
     public static void retreviValuesToken(){
         //recupero el valor a la que hace referencia ese caracter para el numero de vueltas
         vueltas = findValueInt(textTrash.charAt(299));
-        vueltas=5;
+        //vueltas=5;
         //int numDir;
         //int numPos;
         for (int i = 0; i < vueltas; i++) {

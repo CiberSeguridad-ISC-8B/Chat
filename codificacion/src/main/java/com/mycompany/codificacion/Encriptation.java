@@ -47,7 +47,7 @@ public class Encriptation {
         vecPosTrash.clear();
         vecDirTrash.clear();
         diccionary();
-        int vueltas = Integer.parseInt((String) no_vueltas.getValue());
+        int vueltas = Integer.parseInt( no_vueltas.getValue().toString());
         decoding = dec;
         String frase = phrase;
         
@@ -90,6 +90,7 @@ public class Encriptation {
         listToString();
         System.out.println("");
         String []values=new String[2];
+        decoding.append("Texto enviado : \n" + textEncryp);
         values[0] = textEncryp;
         values[1] = textTrash;
         System.out.println("Value -> "+arrayToString(values));
