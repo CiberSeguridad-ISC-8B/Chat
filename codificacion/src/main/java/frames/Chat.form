@@ -230,7 +230,7 @@
                     <Property name="text" type="java.lang.String" value="Ingresa el numero de ciclos a ejecutarse (4-11)"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JSpinner" name="jSpinner2">
+                <Component class="javax.swing.JSpinner" name="numeroVueltas">
                   <Properties>
                     <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
                       <SpinnerModel initial="4" maximum="11" minimum="4" numberType="java.lang.Integer" stepSize="1" type="number"/>

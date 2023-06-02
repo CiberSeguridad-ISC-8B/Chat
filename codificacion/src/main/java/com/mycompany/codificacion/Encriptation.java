@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Hashtable;
 import java.util.Map;
+import javax.swing.JSpinner;
 import javax.swing.JTextArea;
 /**
  *
@@ -34,7 +35,7 @@ public class Encriptation {
     /**
      * @param args the command line arguments
      */
-    public static String[] doEncryp(String phrase,JTextArea dec){
+    public static String[] doEncryp(String phrase,JTextArea dec,JSpinner no_vueltas){
         //reniciar variables...
         codigoOri.clear();
         codigoRan.clear();
@@ -46,7 +47,7 @@ public class Encriptation {
         vecPosTrash.clear();
         vecDirTrash.clear();
         diccionary();
-        int vueltas = 5;
+        int vueltas = Integer.parseInt((String) no_vueltas.getValue());
         decoding = dec;
         String frase = phrase;
         

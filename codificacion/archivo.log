@@ -886,3 +886,4 @@
 2023-05-30 16:16:29,837 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
 2023-05-30 16:17:09,896 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
 >>>>>>> 7d1e5661676c3c3385d24132fdbf956365fc9434
+2023-06-01 18:47:43,113 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.

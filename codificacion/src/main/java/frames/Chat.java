@@ -70,16 +70,14 @@ public class Chat extends javax.swing.JFrame {
         jPanel5 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jSpinner2 = new javax.swing.JSpinner();
+        numeroVueltas = new javax.swing.JSpinner();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Chat ");
 
-
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 255, 0), 10), "Chat", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         jPanel1.setAutoscrolls(true);
-
         jPanel1.setLayout(new java.awt.BorderLayout());
 
         jPanel4.setAutoscrolls(true);
@@ -99,15 +97,12 @@ public class Chat extends javax.swing.JFrame {
 
         jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
         jTextArea1.setColumns(20);
-
-
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(20);
         jTextArea1.setWrapStyleWord(true);
-        jTextArea1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Decoding", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 0))); // NOI18N
+        jTextArea1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Decoding", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(255, 255, 255))); // NOI18N
         jTextArea1.setMaximumSize(new java.awt.Dimension(2147483647, 200));
         jTextArea1.setMinimumSize(new java.awt.Dimension(11, 200));
-
         jScrollPane2.setViewportView(jTextArea1);
 
         jPanel4.add(jScrollPane2);
@@ -157,9 +152,9 @@ public class Chat extends javax.swing.JFrame {
         jLabel2.setText("Ingresa el numero de ciclos a ejecutarse (4-11)");
         jPanel7.add(jLabel2);
 
-        jSpinner2.setModel(new javax.swing.SpinnerNumberModel(4, 4, 11, 1));
-        jSpinner2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jPanel7.add(jSpinner2);
+        numeroVueltas.setModel(new javax.swing.SpinnerNumberModel(4, 4, 11, 1));
+        numeroVueltas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jPanel7.add(numeroVueltas);
 
         jPanel5.add(jPanel7);
 
@@ -275,7 +270,7 @@ public class Chat extends javax.swing.JFrame {
         
         // Accion para el boton enviar
 
-        ServerConnection connection = new ServerConnection(socket, this.mensaje, usuario,this.jTextArea1);
+        ServerConnection connection = new ServerConnection(socket, this.mensaje, usuario,this.jTextArea1,this.numeroVueltas);
         this.enviar.addActionListener(connection);
         this.mensaje.addKeyListener(connection);
         //this.jTextArea1.setLineWrap(true);
@@ -347,9 +342,9 @@ public class Chat extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JSpinner jSpinner2;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField mensaje;
     private javax.swing.JTextArea messagesToShow;
+    private javax.swing.JSpinner numeroVueltas;
     // End of variables declaration//GEN-END:variables
 }

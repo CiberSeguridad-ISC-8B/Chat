@@ -13,6 +13,7 @@ import java.awt.event.KeyListener;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
+import javax.swing.JSpinner;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import org.apache.log4j.Logger;
@@ -28,12 +29,14 @@ public class ServerConnection implements ActionListener,KeyListener{
     private String usuario;
     private DataOutputStream salidaDatos;
     private String []values;
-    public ServerConnection(Socket socket, JTextField tfMensaje, String usuario,JTextArea dec) {
+    private JSpinner no_vueltas;
+    public ServerConnection(Socket socket, JTextField tfMensaje, String usuario,JTextArea dec,JSpinner no_vueltas) {
         this.values = new String[2];
         this.decoding = dec;
         this.socket = socket;
         this.tfMensaje = tfMensaje;
         this.usuario = usuario;
+        this.no_vueltas = no_vueltas;
         try {
             this.salidaDatos = new DataOutputStream(socket.getOutputStream());
         } catch (IOException ex) {
@@ -47,7 +50,7 @@ public class ServerConnection implements ActionListener,KeyListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         try {
-            this.values = Encriptation.doEncryp(tfMensaje.getText(),decoding);
+            this.values = Encriptation.doEncryp(tfMensaje.getText(),decoding,this.no_vueltas);
             salidaDatos.writeUTF( usuario + ": " + Encriptation.arrayToString(values) );
             
             
@@ -72,7 +75,7 @@ public class ServerConnection implements ActionListener,KeyListener{
     public void keyReleased(KeyEvent e) {
         if( e.getKeyCode() == KeyEvent.VK_ENTER ){
             try {
-                this.values = Encriptation.doEncryp(tfMensaje.getText(),decoding);
+                this.values = Encriptation.doEncryp(tfMensaje.getText(),decoding,this.no_vueltas);
                 salidaDatos.writeUTF( usuario + ": " + Encriptation.arrayToString(values) );
                 
                 
