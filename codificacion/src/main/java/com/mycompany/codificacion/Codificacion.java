@@ -4,16 +4,6 @@
 
 package com.mycompany.codificacion;
 
-/*import static com.mycompany.codificacion.Encriptation.c;
-import static com.mycompany.codificacion.Encriptation.caracterASCII;
-import static com.mycompany.codificacion.Encriptation.codigoOri;
-import static com.mycompany.codificacion.Encriptation.findValueChar;
-import static com.mycompany.codificacion.Encriptation.srtTrash;
-import static com.mycompany.codificacion.Encriptation.tamanio;
-import static com.mycompany.codificacion.Encriptation.vecDir;
-import static com.mycompany.codificacion.Encriptation.vecDirTrash;
-import static com.mycompany.codificacion.Encriptation.vecPos;
-import static com.mycompany.codificacion.Encriptation.vecPosTrash;*/
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.Map;
@@ -29,9 +19,11 @@ public class Codificacion {
     public static ArrayList<Integer> vecPos = new ArrayList<>();
     public static ArrayList<Integer> vecDir = new ArrayList<>();
     public static ArrayList<Character> srtTrash = new ArrayList<>();
-    public static ArrayList<String> encryp = new ArrayList<>();
+    public static ArrayList<String> encrypBin = new ArrayList<>();
     public static ArrayList<Integer> vecPosTrash = new ArrayList<>();
     public static ArrayList<Integer> vecDirTrash = new ArrayList<>();
+    public static ArrayList<Integer> vecDecimales = new ArrayList<>();
+    public static String mensaje="";
     public static int tamanio = 256;
     public static String parteAnterior;
     public static String partePosterior;
@@ -39,14 +31,23 @@ public class Codificacion {
     public static String textEncryp, textTrash;
     public static char nuevoCaracter;
     public static int vueltas;
+    public static String bin;
     
     public static Hashtable<Character, Integer> c = new Hashtable<>();
     
-    public static void main(String token, String phraseEncr) {
+    public static void main(String[] args) {
+        codification();
+    }
+    
+    //Ejecuta la codificación del texto encriptado
+    public static void codification(){
         //limpiamos variables y listas
         clear();
         //Cargo nuestro diccionario
-        textTrash = token;
+        //textTrash = token;
+        textTrash ="A9N;mGy3V'dY%\\L8FBmNjd~x2%a=b19bdMFR8F;bXcneNT)}p<!%pX_2@},W/P%s)Q;m_>t%z']y;O>YWEWf(a`l(Mp>h)Gp;E{~qd@1jNB{\\F#;k,qc~C!x>ha+#hz(.l{ok3:*klFOVPRr?gBPdo`s_Y5hi&4[tBJSP=H_V/U2}t\\02:(W}#z|^4\"?7~qJftQ<7itJuq:tj1#K:$Y-H?a[c@#UGn7&l/d=tyc}ca4,HSs:FN\"/&c#\\i]>LV6'Q-jktVI\\91A'pQ!`FP0\\a+jBm%<#/6_DG0B`|X)1DX-bD.t?./&XE!5Ck?fR!)\"lE=riaW4sOB~DdpXSq;*2C^\"X(:xt}OI";
+        textEncryp = "0000100000011011110101000001011100100011001001011101010000100100001001100001111100100010000110010001101111010100000010010001011100100011101111101111011000011011001010010010010100101001111000101110001011100010";
+        bin=textEncryp;
         diccionary();//Llenamos nuestro diccionario
         //funcion de llenado del codigo ASCII el vector original con el vector 
         codAscii(codigoOri);
@@ -55,11 +56,94 @@ public class Codificacion {
         fillVecTrash();
         // Recuperan ahora los valores enteros dependiendo el caracter
         retreviValuesToken();
+        // Recuperamos los bits en 8 bits en un vector ebcrypBin
+        vecBin();
+        // Vector random de ASCII recuperando
+        vectorRan();
+        //Ponemos todos los numeros binarios como deben de estar
+        binaryToDecimal();
         
-        
+        System.out.println("Cadena de binarios bien\n"+vecDecimales);
+        convertToChar();
+        //System.out.println("Vector Random\n"+codigoRan);
+        //System.out.println(codigoOri);
         /*char car = 'A';
         System.out.println("Valor del caracter -> "+car+" es "+findValueInt(car));*/
-        
+        //System.out.println(textTrash);
+        //System.out.println("Caracter @ -> "+findValueInt('@'));
+    }
+    
+    //Encontrar el numero para convertirlo en caracter
+    public static void convertToChar(){
+        int posVecASCII = -1;
+        for(int i = 0; i < vecDecimales.size(); i++){
+            posVecASCII = codigoRan.indexOf(vecDecimales.get(i));
+            System.out.print((char)posVecASCII);
+        }
+        System.out.println("");
+    }
+    
+    
+    //El binario se le hace el cambio del primer y ultimo bit si era 1 es 0 y si es 0 es 1
+    public static void binaryToDecimal(){
+        String binario = "";
+        for(int i = 0; i < encrypBin.size(); i++){
+            binario = encrypBin.get(i);
+            System.out.println("Binario Encrip -> "+binario);
+            //Modificar el Primer Bit del caracter 
+            if(binario.charAt(0)=='1'){
+                nuevoCaracter = '0';
+                // Obtener la parte después de la posición a modificar
+                partePosterior = binario.substring(0 + 1);
+                 // Crear la nueva cadena concatenando las partes y el nuevo carácter
+                 binario = nuevoCaracter + partePosterior;
+
+            }else if(binario.charAt(0)=='0'){
+                nuevoCaracter = '1';
+                // Obtener la parte después de la posición a modificar
+                partePosterior = binario.substring(0 + 1);
+                binario = nuevoCaracter + partePosterior;
+
+            }
+
+            //Modificar el Ultimo Bit del caracter 
+            if(binario.charAt(7)=='1'){
+                nuevoCaracter = '0';
+                // Obtener la parte antes de la posición a modificar
+                parteAnterior = binario.substring(0, 7);
+
+                // Crear la nueva cadena concatenando las partes y el nuevo carácter
+                binario = parteAnterior + nuevoCaracter;
+
+            }else if(binario.charAt(7)=='0'){
+                nuevoCaracter = '1';
+                // Obtener la parte antes de la posición a modificar
+                parteAnterior = binario.substring(0, 7);
+
+                // Crear la nueva cadena concatenando las partes y el nuevo carácter
+                binario = parteAnterior + nuevoCaracter;
+
+            }
+            System.out.println("Binario bien -> "+binario);
+            vecDecimales.add(Integer.parseInt(binario, 2));
+        }   
+    }
+    
+    //Pongo en un vector llamado encrypBin el numero en binario de 8 bits de la cadena encriptada
+    public static void vecBin(){
+        String bits = "";
+        int cont = 0;
+        for(int i = 0; i< bin.length(); i++){
+            bits += bin.charAt(i);
+            if(((i+1)%8)==0){
+                cont++;
+                //System.out.println(i+1);
+                encrypBin.add(bits);
+                bits="";
+            }
+        }
+        System.out.println(cont+" Bytes con "+bin.length()+" caracteres");
+        System.out.println("Vector \n"+encrypBin);
     }
     
     // Poner el vector original revuelto de manera aleatoria en la encriptación 
@@ -70,7 +154,7 @@ public class Codificacion {
             int dir = vecDir.get(i); // Recuperamos el valor hacia donde va a trasladarse izq o der
             int pos = vecPos.get(i); // posiciones a recorrer nuestro vector
             int temp;
-            
+            System.out.println("Dir -> "+dir+"  ----    Pos -> "+pos);
             if(dir == 0){//recorrido izquierda
                 while(j < pos){
                     // Mover los valores una posición a la izquierda
@@ -119,6 +203,7 @@ public class Codificacion {
     public static void retreviValuesToken(){
         //recupero el valor a la que hace referencia ese caracter para el numero de vueltas
         vueltas = findValueInt(textTrash.charAt(299));
+        vueltas=5;
         //int numDir;
         //int numPos;
         for (int i = 0; i < vueltas; i++) {
@@ -133,14 +218,16 @@ public class Codificacion {
         vecPosTrash.clear();
         vecPos.clear();
         vecDir.clear();
-        encryp.clear();
+        encrypBin.clear();
         srtTrash.clear();
         caracterASCII.clear();
         codigoOri.clear();
         codigoRan.clear();
+        vecDecimales.clear();
         
         textEncryp="";
         textTrash="";
+        mensaje="";
     }
     
     public static int findValueInt(char chr){
