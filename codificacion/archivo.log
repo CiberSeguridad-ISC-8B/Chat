@@ -338,6 +338,15 @@
 2023-05-28 15:25:11,797 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
 2023-05-28 15:26:44,895 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: Cris.
 <<<<<<< HEAD
+2023-05-28 15:44:34,971 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: JuCa.
+2023-05-28 16:10:25,825 [main] INFO  frames.Chat - Quieres conectarte a 25.45.11.102 en el puerto 1234 con el nombre de ususario: JuCa.
+2023-05-30 15:50:06,525 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: .
+2023-05-30 15:50:06,551 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-30 15:50:06,552 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-30 15:50:06,552 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 15:50:06,552 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+=======
+<<<<<<< HEAD
 2023-05-28 17:14:45,048 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Sam.
 2023-05-28 17:14:45,097 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
 2023-05-28 17:14:45,098 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
@@ -876,3 +885,4 @@
 2023-05-30 16:14:19,061 [main] ERROR frames.Chat - El socket no se creo correctamente. 
 2023-05-30 16:16:29,837 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
 2023-05-30 16:17:09,896 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+>>>>>>> 7d1e5661676c3c3385d24132fdbf956365fc9434
