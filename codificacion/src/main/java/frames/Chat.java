@@ -6,6 +6,7 @@ package frames;
 
 import com.mycompany.codificacion.Codificacion;
 import com.mycompany.codificacion.Time;
+import com.mycompany.codificacion.Encriptation;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.FontFormatException;
@@ -18,7 +19,9 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.Hashtable;
 import java.util.logging.Level;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -38,9 +41,12 @@ public class Chat extends javax.swing.JFrame {
     
     private int puerto;
     private String host;
-    private String usuario;
+    private String usuario, textTrash;
     private Logger log = Logger.getLogger(Chat.class);
     private Socket socket;
+    private ArrayList<Integer> vecPosTrash = new ArrayList<>();
+    private ArrayList<Integer> vecDirTrash = new ArrayList<>();
+    private int ciclos;
     /**
      * Creates new form Chat
      */
@@ -50,7 +56,7 @@ public class Chat extends javax.swing.JFrame {
         this.setSize(640, 240);
         this.setMinimumSize(new Dimension(640,240));
         this.setLocationRelativeTo(null);
-        
+        this.btnDicTok.setVisible(false);
 
     }
 
@@ -84,6 +90,7 @@ public class Chat extends javax.swing.JFrame {
         mensaje = new javax.swing.JTextField();
         jPanel5 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
+        btnDicTok = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         numeroVueltas = new javax.swing.JSpinner();
         time = new javax.swing.JLabel();
@@ -228,6 +235,14 @@ public class Chat extends javax.swing.JFrame {
 
         jPanel7.setBackground(new java.awt.Color(0, 0, 0));
 
+        btnDicTok.setText("Diccionario y Token");
+        btnDicTok.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnDicTokMouseClicked(evt);
+            }
+        });
+        jPanel7.add(btnDicTok);
+
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Ingresa el numero de ciclos a ejecutarse (4-11)");
         jPanel7.add(jLabel2);
@@ -273,6 +288,19 @@ public class Chat extends javax.swing.JFrame {
             
         }*/
     }//GEN-LAST:event_mensajeKeyReleased
+
+    private void btnDicTokMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnDicTokMouseClicked
+        // TODO add your handling code here:
+        //Hashtable<Character, Integer> c = new Hashtable<>();
+        /*ArrayList<Integer> vecPosTrash = new ArrayList<>();
+        ArrayList<Integer> vecDirTrash = new ArrayList<>();
+        c = Encriptation.getDicc();
+        vecPosTrash = Encriptation.vecPosTrash;
+        vecDirTrash = Encriptation.vecDirTrash;
+        String textTrash = Encriptation.textTrash;*/
+        //c = Encriptation.getDicc();
+        new DiccionarioToken(Encriptation.getDicc(), vecPosTrash, vecDirTrash, textTrash, this.ciclos).setVisible(true);
+    }//GEN-LAST:event_btnDicTokMouseClicked
     private void inicia(){
         JPanel panel = new JPanel();
         JButton boton = new JButton();
@@ -319,7 +347,7 @@ public class Chat extends javax.swing.JFrame {
         Time t ; 
         t = new Time(c.getTimeLabel());
         t.start();
-     
+        
         File fuente=new File("src/main/java/fonts/Courgette-Regular.ttf");
         Font font=null; 
         try {
@@ -363,7 +391,7 @@ public class Chat extends javax.swing.JFrame {
         }
         
         // Accion para el boton enviar
-
+        
         ServerConnection connection = new ServerConnection(socket, this.mensaje, usuario,new javax.swing.JTextArea(),this.numeroVueltas,this.encoding,this.mensajeCodigos);
         this.enviar.addActionListener(connection);
         this.mensaje.addKeyListener(connection);
@@ -411,11 +439,21 @@ public class Chat extends javax.swing.JFrame {
                 String value;
                 if ( this.usuario.equals(values[0]) ){
                     value = this.mensaje.getText();
-                   
+                    this.vecDirTrash = Encriptation.vecDirTrash;
+                    this.vecPosTrash = Encriptation.vecPosTrash;
+                    this.ciclos = Encriptation.vueltas;
+                    this.textTrash = Encriptation.textTrash;
+                    this.btnDicTok.setVisible(true);
                 }else{
                     value = Codificacion.codification(val[ 1 ], val[ 0 ], this.decodingTable,this.suffleReverse);
-                
+                    this.vecDirTrash = Codificacion.vecDirTrash;
+                    this.vecPosTrash = Codificacion.vecPosTrash;
+                    this.ciclos = Codificacion.vueltas;
+                    this.textTrash = Codificacion.textTrash;
+                    this.btnDicTok.setVisible(true);
                 }
+                //Mandar a llamar la funcion del que me crea el frame DiccionarioToken
+                // Para
                 this.mensaje.setText("");
                 this.messagesToShow.append(values[0] + " :::: " + value + System.lineSeparator());
                 
@@ -434,6 +472,7 @@ public class Chat extends javax.swing.JFrame {
      */
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnDicTok;
     private javax.swing.JTable decodingTable;
     private javax.swing.JTable encoding;
     private javax.swing.JButton enviar;

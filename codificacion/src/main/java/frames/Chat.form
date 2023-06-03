@@ -326,6 +326,14 @@
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
               <SubComponents>
+                <Component class="javax.swing.JButton" name="btnDicTok">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Diccionario y Token"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="btnDicTokMouseClicked"/>
+                  </Events>
+                </Component>
                 <Component class="javax.swing.JLabel" name="jLabel2">
                   <Properties>
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
