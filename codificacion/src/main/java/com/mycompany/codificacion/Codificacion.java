@@ -7,6 +7,8 @@ package com.mycompany.codificacion;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.Map;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -34,13 +36,17 @@ public class Codificacion {
     public static String bin;
     
     public static Hashtable<Character, Integer> c = new Hashtable<>();
-    
+    public static JTable decodingTable;
+    public static JTable suffleReverse;
+    public static Object [][]obj;
     public static void main(String[] args) {
         //codification();
     }
     
     //Ejecuta la codificación del texto encriptado
-    public static String codification(String token,String messagehidden){
+    public static String codification(String token,String messagehidden,JTable decodingTab,JTable suffleRev){
+        suffleReverse = suffleRev;
+        decodingTable = decodingTab;
         //limpiamos variables y listas
         clear();
         //Cargo nuestro diccionario
@@ -81,10 +87,15 @@ public class Codificacion {
     public static void convertToChar(){
         int posVecASCII = -1;
         for(int i = 0; i < vecDecimales.size(); i++){
+             
             posVecASCII = codigoRan.indexOf(vecDecimales.get(i));
+            obj[ i ][ 3 ] = posVecASCII;
+            obj[ i ][ 4 ] = (char)posVecASCII;
             System.out.print((char)posVecASCII);
             mensaje += (char)posVecASCII;
         }
+        String columnas[] = {"Binario Final","Binario Ficticio","Código Ficticio","Código Real","Caracter"};
+        decodingTable.setModel(new DefaultTableModel(obj,columnas));
         System.out.println("");
         
     }
@@ -96,6 +107,7 @@ public class Codificacion {
         for(int i = 0; i < encrypBin.size(); i++){
             binario = encrypBin.get(i);
             System.out.println("Binario Encrip -> "+binario);
+            obj[ i ][ 0 ] = binario;
             //Modificar el Primer Bit del caracter 
             if(binario.charAt(0)=='1'){
                 nuevoCaracter = '0';
@@ -130,6 +142,8 @@ public class Codificacion {
                 binario = parteAnterior + nuevoCaracter;
 
             }
+            obj[ i ][ 1 ] = binario;
+            obj[ i ][ 2 ] = Integer.parseInt(binario, 2);
             System.out.println("Binario bien -> "+binario);
             vecDecimales.add(Integer.parseInt(binario, 2));
         }   
@@ -148,6 +162,8 @@ public class Codificacion {
                 bits="";
             }
         }
+        obj = new Object[ cont ][ 5 ];
+        
         System.out.println(cont+" Bytes con "+bin.length()+" caracteres");
         System.out.println("Vector \n"+encrypBin);
     }

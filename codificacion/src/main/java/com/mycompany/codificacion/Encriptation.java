@@ -9,7 +9,9 @@ import java.util.Arrays;
 import java.util.Hashtable;
 import java.util.Map;
 import javax.swing.JSpinner;
+import javax.swing.JTable;
 import javax.swing.JTextArea;
+import javax.swing.table.DefaultTableModel;
 /**
  *
  * @author kris_
@@ -31,12 +33,18 @@ public class Encriptation {
     public static String textEncryp, textTrash;
     public static char nuevoCaracter;
     public static JTextArea decoding;
+    public static JTable tablaEncryp;
     public static Hashtable<Character, Integer> c = new Hashtable<>();
+    public static int vueltas=0;
+    public static int contCaracteres = 0 ;
+    public static JTable mensajeCodigos;
     /**
      * @param args the command line arguments
      */
-    public static String[] doEncryp(String phrase,JTextArea dec,JSpinner no_vueltas){
+    public static String[] doEncryp(String phrase,JTextArea dec,JSpinner no_vueltas,JTable tablaEn,JTable mensajeCodig){
         //reniciar variables...
+        tablaEncryp = tablaEn;
+        mensajeCodigos = mensajeCodig;
         codigoOri.clear();
         codigoRan.clear();
         caracterASCII.clear();
@@ -47,10 +55,9 @@ public class Encriptation {
         vecPosTrash.clear();
         vecDirTrash.clear();
         diccionary();
-        int vueltas = Integer.parseInt( no_vueltas.getValue().toString());
+        vueltas = Integer.parseInt( no_vueltas.getValue().toString());
         decoding = dec;
         String frase = phrase;
-        
         // TODO code application logic here
         //funcion de llenado del codigo ASCII
         codAscii(codigoOri);
@@ -90,10 +97,11 @@ public class Encriptation {
         listToString();
         System.out.println("");
         String []values=new String[2];
-        decoding.append("Texto enviado : \n" + textEncryp);
+        decoding.append("Texto enviado : \n" + textEncryp); 
         values[0] = textEncryp;
         values[1] = textTrash;
         System.out.println("Value -> "+arrayToString(values));
+        
         return values;
     }
     public static void main(String[] args) {
@@ -219,10 +227,18 @@ public class Encriptation {
     
     //Hace la conversion de la letra a binario
     public static void binaryConversion(String letter){
+        Object obj[][] = new Object [ letter.length() ][5];                
+        String columnas[]={"Caracter","Código Real","Código Ficticio","Binario Ficticio","Binario Final"};
+       
         for(int i = 0; i < letter.length(); i++){
             System.out.println("");
-            encryp.add(completeBinary((int)letter.charAt(i)));
+            obj[ i ][ 0 ] = letter.charAt(i);
+            obj[ i ][ 1 ] = (int)letter.charAt(i);
+            obj[ i ][ 2 ] = codigoRan.get((int)letter.charAt(i));
+            contCaracteres = i ;
+            encryp.add(completeBinary((int)letter.charAt(i),obj));
         }
+        mensajeCodigos.setModel(new DefaultTableModel(obj,columnas));
         System.out.println("");
     }
     
@@ -246,8 +262,7 @@ public class Encriptation {
     }
     
     //agrega que sea de 8 bits EXACTAMENTE mi numero decimal
-    public static String completeBinary(int decimal){
-        
+    public static String completeBinary(int decimal,Object [][]obj){
         System.out.println("NumOriginal -> "+decimal+"  ---  NumNew -> "+codigoRan.get(decimal));
         
         String binario = Integer.toBinaryString(codigoRan.get(decimal)); // Convertir a binario
@@ -255,6 +270,7 @@ public class Encriptation {
         while (binario.length() < 8) {
             binario = "0" + binario;
         }
+        obj[ contCaracteres ][ 3 ] = binario;
         //Modificar el Primer Bit del caracter 
         if(binario.charAt(0)=='1'){
             nuevoCaracter = '0';
@@ -289,7 +305,7 @@ public class Encriptation {
             binario = parteAnterior+nuevoCaracter;
             
         }
-        
+        obj[ contCaracteres ][ 4 ] = binario;
         return binario;
     }
     
@@ -341,6 +357,14 @@ public class Encriptation {
     
     //Mueve a un nuevo vector Random
     private static void suffle(int ciclos){
+        
+            
+            Object obj[][]=new Object [vueltas][12];
+            
+            
+            String columnas[]={"Dir","Pos","0","1","2","3","4","5","6","7","8","9"};
+            
+    
         for(int i = 0; i<ciclos; i++){
             int j = 0;
             
@@ -382,7 +406,22 @@ public class Encriptation {
                 System.out.println("Lista desplazada a la derecha: pos = "+pos);
                 decoding.append("Lista desplazada a la derecha: pos = "+pos+"\n");
             }
+            
+            for(int k = 2; k < 12; k++){
+                    obj[i][k] = codigoRan.get(k-2);
+                    if( k-2 < 4){
+                        if(dir == 0){
+                            obj[i][0] = "Izquierda";
+                        }else{
+                            obj[i][0] = "Derecha";
+                        }
+                        
+                        obj[i][1] = pos;
+                    }
+            }
+           
             formatPretty();
         }
+         tablaEncryp.setModel(new DefaultTableModel(obj,columnas));
     }
 }
