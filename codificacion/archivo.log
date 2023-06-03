@@ -949,3 +949,39 @@
 2023-06-03 00:46:05,685 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
 2023-06-03 00:46:21,286 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Juan.
 2023-06-03 00:49:59,742 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-06-03 08:55:11,343 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Juan.
+2023-06-03 08:55:11,366 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-06-03 08:55:11,368 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-06-03 08:55:11,368 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-06-03 08:55:11,368 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-06-03 08:55:32,973 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Alonso.
+2023-06-03 08:55:33,032 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-06-03 08:55:33,035 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-06-03 08:55:33,036 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-06-03 08:55:33,036 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-06-03 09:05:08,882 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: JuCa.
+2023-06-03 09:05:08,915 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-06-03 09:05:08,917 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-06-03 09:05:08,918 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-06-03 09:05:08,918 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-06-03 09:09:49,903 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: JuCa.
+2023-06-03 09:10:20,577 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Alonso.
+2023-06-03 09:23:30,003 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: JuCa.
+2023-06-03 09:23:42,333 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Alonso.
+2023-06-03 09:23:51,568 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-06-03 09:24:04,328 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-06-03 09:24:25,142 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Alonso.
+2023-06-03 09:24:36,103 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
+2023-06-03 09:24:47,162 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-06-03 09:24:53,473 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-06-03 11:23:30,140 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: JuCa.
+2023-06-03 11:23:42,288 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
+2023-06-03 11:26:19,221 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
+2023-06-03 11:26:30,232 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Alonso.
+2023-06-03 11:27:42,250 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
+2023-06-03 11:27:53,804 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: JuCa.
+2023-06-03 11:30:36,699 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
+2023-06-03 11:30:47,233 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Alonso.
+2023-06-03 11:36:07,935 [main] ERROR frames.Chat - Error al leer del stream de entrada: Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder
+2023-06-03 11:36:56,175 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Alonso.
+2023-06-03 11:37:08,556 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Lol.
