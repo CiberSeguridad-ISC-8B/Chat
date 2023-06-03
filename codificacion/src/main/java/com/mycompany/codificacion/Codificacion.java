@@ -39,6 +39,8 @@ public class Codificacion {
     public static JTable decodingTable;
     public static JTable suffleReverse;
     public static Object [][]obj;
+    //public static JTable tablaEncryp;
+    
     public static void main(String[] args) {
         //codification();
     }
@@ -170,6 +172,9 @@ public class Codificacion {
     
     // Poner el vector original revuelto de manera aleatoria en la encriptación 
     public static void vectorRan(){
+        Object [][]objRan = new Object[ vueltas ][ 12 ];
+        String col[]={"Dir","Pos","0","1","2","3","4","5","6","7","8","9"};
+        
         for(int i = 0; i<vueltas; i++){
             int j = 0;
             
@@ -208,8 +213,22 @@ public class Codificacion {
                 System.out.println("Lista desplazada a la derecha: pos = "+pos);
                 
             }
+            //
+            for(int k = 2; k < 12; k++){
+                objRan[i][k] = codigoRan.get(k-2);
+                    if( k-2 < 4){
+                        if(dir == 0){
+                            objRan[i][0] = "Izquierda";
+                        }else{
+                            objRan[i][0] = "Derecha";
+                        }
+
+                        objRan[i][1] = pos;
+                    }
+                }
             formatPretty();
         }
+        suffleReverse.setModel(new DefaultTableModel(objRan,col));
     }
     
     //Un fromato agardable para ver el vector Random 

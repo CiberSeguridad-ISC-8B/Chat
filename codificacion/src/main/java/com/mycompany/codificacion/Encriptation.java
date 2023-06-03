@@ -422,6 +422,6 @@ public class Encriptation {
            
             formatPretty();
         }
-         tablaEncryp.setModel(new DefaultTableModel(obj,columnas));
+        tablaEncryp.setModel(new DefaultTableModel(obj,columnas));
     }
 }
