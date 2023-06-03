@@ -86,6 +86,7 @@ public class Chat extends javax.swing.JFrame {
         jPanel7 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         numeroVueltas = new javax.swing.JSpinner();
+        time = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Chat ");
@@ -235,6 +236,10 @@ public class Chat extends javax.swing.JFrame {
         numeroVueltas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel7.add(numeroVueltas);
 
+        time.setForeground(new java.awt.Color(51, 255, 51));
+        time.setText("jLabel1");
+        jPanel7.add(time);
+
         jPanel5.add(jPanel7);
 
         jPanel1.add(jPanel5, java.awt.BorderLayout.PAGE_START);
@@ -283,6 +288,7 @@ public class Chat extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -300,13 +306,9 @@ public class Chat extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Chat.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-         PropertyConfigurator.configure("log4j.properties");        
-         Chat c = new Chat();
-         c.conf();
-       
-        //Time t;
-        //t = new Time();
-        
+        PropertyConfigurator.configure("log4j.properties");        
+        Chat c = new Chat();
+        c.conf();
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 
@@ -314,8 +316,10 @@ public class Chat extends javax.swing.JFrame {
                 //t.showTime();
             }
         });
-        c.recibirMensajesServidor();
-        
+        Time t ; 
+        t = new Time(c.getTimeLabel());
+        t.start();
+     
         File fuente=new File("src/main/java/fonts/Courgette-Regular.ttf");
         Font font=null; 
         try {
@@ -325,6 +329,9 @@ public class Chat extends javax.swing.JFrame {
         } catch (IOException ex) {
             java.util.logging.Logger.getLogger(Chat.class.getName()).log(Level.SEVERE, null, ex);
         }
+        c.recibirMensajesServidor();
+        
+        
         
         //this.mensaje.setFont(font);
         /* Create and display the form */
@@ -333,6 +340,9 @@ public class Chat extends javax.swing.JFrame {
 /**
      * Recibe los mensajes del chat reenviados por el servidor
      */
+    public javax.swing.JLabel getTimeLabel(){
+        return this.time;
+    }
     public void conf(){
                 // Ventana de configuracion inicial
         ConfigurationWindow vc = new ConfigurationWindow(new JFrame());
@@ -447,5 +457,6 @@ public class Chat extends javax.swing.JFrame {
     private javax.swing.JTextArea messagesToShow;
     private javax.swing.JSpinner numeroVueltas;
     private javax.swing.JTable suffleReverse;
+    private javax.swing.JLabel time;
     // End of variables declaration//GEN-END:variables
 }
