@@ -876,3 +876,8 @@
 2023-05-30 16:14:19,061 [main] ERROR frames.Chat - El socket no se creo correctamente. 
 2023-05-30 16:16:29,837 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
 2023-05-30 16:17:09,896 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-05-30 22:18:44,711 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: sam.
+2023-05-30 22:18:44,729 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-05-30 22:18:44,729 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-05-30 22:18:44,730 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-05-30 22:18:44,730 [main] ERROR frames.Chat - El socket no se creo correctamente. 
