@@ -13,6 +13,8 @@ import java.awt.event.KeyListener;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
+import javax.swing.JSpinner;
+import javax.swing.JTable;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import org.apache.log4j.Logger;
@@ -28,12 +30,19 @@ public class ServerConnection implements ActionListener,KeyListener{
     private String usuario;
     private DataOutputStream salidaDatos;
     private String []values;
-    public ServerConnection(Socket socket, JTextField tfMensaje, String usuario,JTextArea dec) {
+    private JSpinner no_vueltas;
+    private JTable tablaEncryp;
+    private JTable mensajeCodigos;
+    
+    public ServerConnection(Socket socket, JTextField tfMensaje, String usuario,JTextArea dec,JSpinner no_vueltas,JTable tablaEncryp,JTable mensajeCodigos) {
         this.values = new String[2];
+        this.mensajeCodigos = mensajeCodigos;
+        this.tablaEncryp = tablaEncryp;
         this.decoding = dec;
         this.socket = socket;
         this.tfMensaje = tfMensaje;
         this.usuario = usuario;
+        this.no_vueltas = no_vueltas;
         try {
             this.salidaDatos = new DataOutputStream(socket.getOutputStream());
         } catch (IOException ex) {
@@ -47,12 +56,12 @@ public class ServerConnection implements ActionListener,KeyListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         try {
-            this.values = Encriptation.doEncryp(tfMensaje.getText(),decoding);
+            this.values = Encriptation.doEncryp(tfMensaje.getText(),decoding,this.no_vueltas,this.tablaEncryp,this.mensajeCodigos);
             salidaDatos.writeUTF( usuario + ": " + Encriptation.arrayToString(values) );
             
             
             //salidaDatos.writeUTF(usuario + ": " + tfMensaje.getText() );
-            tfMensaje.setText("");
+           
         } catch (IOException ex) {
             log.error("Error al intentar enviar un mensaje: " + ex.getMessage());
         }
@@ -72,11 +81,11 @@ public class ServerConnection implements ActionListener,KeyListener{
     public void keyReleased(KeyEvent e) {
         if( e.getKeyCode() == KeyEvent.VK_ENTER ){
             try {
-                this.values = Encriptation.doEncryp(tfMensaje.getText(),decoding);
+                this.values = Encriptation.doEncryp(tfMensaje.getText(),decoding,this.no_vueltas,this.tablaEncryp,this.mensajeCodigos);
                 salidaDatos.writeUTF( usuario + ": " + Encriptation.arrayToString(values) );
                 
                 
-                tfMensaje.setText("");
+                
             } catch (IOException ex) {
                 log.error("Error al intentar enviar un mensaje: " + ex.getMessage());
             }

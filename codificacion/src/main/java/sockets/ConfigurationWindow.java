@@ -63,7 +63,7 @@ public class ConfigurationWindow extends JDialog{
         JLabel lbPuerto = new JLabel("Puerto:");
         
         tfUsuario = new JTextField();
-        tfHost = new JTextField("localhost");
+        tfHost = new JTextField("74.235.27.103");
         tfPuerto = new JTextField("1234");
         
         JButton btAceptar = new JButton("Aceptar");
