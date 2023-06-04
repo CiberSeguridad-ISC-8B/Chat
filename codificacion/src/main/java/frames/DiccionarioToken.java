@@ -122,7 +122,7 @@ public class DiccionarioToken extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         tokenTable = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         principal.setBackground(new java.awt.Color(0, 0, 0));
         principal.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEmptyBorder(20, 30, 20, 30), "Diccionario y Token", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(51, 255, 51))); // NOI18N

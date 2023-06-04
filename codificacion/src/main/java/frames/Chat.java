@@ -300,6 +300,7 @@ public class Chat extends javax.swing.JFrame {
         String textTrash = Encriptation.textTrash;*/
         //c = Encriptation.getDicc();
         new DiccionarioToken(Encriptation.getDicc(), vecPosTrash, vecDirTrash, textTrash, this.ciclos).setVisible(true);
+        
     }//GEN-LAST:event_btnDicTokMouseClicked
     private void inicia(){
         JPanel panel = new JPanel();
