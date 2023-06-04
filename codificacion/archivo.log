@@ -994,3 +994,5 @@
 2023-06-03 12:07:03,656 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
 2023-06-03 12:07:24,275 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Juan.
 2023-06-03 12:09:04,526 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
+2023-06-03 12:32:39,269 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
+2023-06-03 12:37:40,047 [main] ERROR frames.Chat - Error al leer del stream de entrada: Connection reset
