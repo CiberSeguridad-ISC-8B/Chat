@@ -4,6 +4,14 @@
  */
 package frames;
 
+import static com.mycompany.codificacion.Encriptation.c;
+import static com.mycompany.codificacion.Codificacion.findValueInt;
+import java.util.ArrayList;
+import java.util.Hashtable;
+import java.util.Map;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
 /**
  *
  * @author kris_
@@ -13,9 +21,88 @@ public class DiccionarioToken extends javax.swing.JFrame {
     /**
      * Creates new form DiccionarioToken
      */
-    public DiccionarioToken() {
+    public static JTable tablaDicc;
+    //public static Hashtable<Character, Integer> c = new Hashtable<>();
+    
+    public DiccionarioToken(Hashtable<Character, Integer> c, ArrayList<Integer> vecPosTrash, ArrayList<Integer> vecDirTrash, String textTrash, int vueltas) {
         initComponents();
-    }
+        //diccionary();
+        Object objDicc[][] = new Object [ c.size() ][2];                
+        String colDicc[]={"Caracter [Key]","Número [Value]"};
+        int i = 0;
+        for (Map.Entry<Character, Integer> entry : c.entrySet()) {
+            objDicc [i][0] = entry.getKey();
+            objDicc [i][1] = entry.getValue();
+            i++;
+        }
+        i = 0;
+        diccionarioTable.setModel(new DefaultTableModel(objDicc,colDicc));
+        
+        Object objTok[][] = new Object [ vueltas ][6];                
+        String colTok[]={"Posicion Dir","Caracter","Valor","Posicion Pos","Caracter","Valor"};
+        
+        for (int j = 0; j < vueltas; j++) {
+            objTok[j][0] = vecDirTrash.get(j);
+            objTok[j][1] = textTrash.charAt(vecDirTrash.get(j));
+            objTok[j][2] = findValueInt((char)textTrash.charAt(vecDirTrash.get(j)));
+            objTok[j][3] = vecPosTrash.get(j);
+            objTok[j][4] = textTrash.charAt(vecPosTrash.get(j));
+            objTok[j][5] = findValueInt((char)textTrash.charAt(vecPosTrash.get(j)));
+        }
+        
+        tokenTable.setModel(new DefaultTableModel(objTok,colTok));
+    }   
+    
+    /*public static void diccionary(){
+        
+        c.put('B',0);
+        c.put('%',1);
+        c.put('!',4);
+        c.put('|',5);
+        c.put('/',6);
+        c.put('<',7);
+        c.put(':',8);
+        c.put('?',9);
+        c.put('>',10);
+        c.put('&',11);
+        c.put('$',12);
+        c.put('*',13);
+        c.put(';',14);
+        c.put('~',15);
+        c.put('A',20);
+        c.put('Z',21);
+        c.put('T',22);
+        c.put('Y',23);
+        c.put('a',24);
+        c.put('d',25);
+        c.put('b',26);
+        c.put('v',27);
+        c.put('c',28);
+        c.put('w',29);
+        c.put('X',30);
+        c.put('E',31);
+        c.put('L',32);
+        c.put('n',33);
+        c.put('j',34);
+        c.put('f',35);
+        c.put('G',36);
+        c.put('^',37);
+        c.put('_',38);
+        c.put('Z',39);
+        c.put('K',40);
+        c.put('p',41);
+        c.put('s',42);
+        c.put('q',43);
+        c.put('o',44);
+        c.put('i',45);
+        c.put('.',46);
+        c.put('-',47);
+        c.put('@',48);
+        c.put('#',49);
+        c.put('=',50);
+        
+        //System.out.println(c.get('@'));
+    }*/
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -31,10 +118,11 @@ public class DiccionarioToken extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         diccionarioTable = new javax.swing.JTable();
         token = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         tokenTable = new javax.swing.JTable();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         principal.setBackground(new java.awt.Color(0, 0, 0));
         principal.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEmptyBorder(20, 30, 20, 30), "Diccionario y Token", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(51, 255, 51))); // NOI18N
@@ -63,6 +151,8 @@ public class DiccionarioToken extends javax.swing.JFrame {
         token.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Token", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(51, 255, 51))); // NOI18N
         token.setLayout(new java.awt.BorderLayout());
 
+        jPanel1.setLayout(new java.awt.BorderLayout());
+
         tokenTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -76,7 +166,9 @@ public class DiccionarioToken extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(tokenTable);
 
-        token.add(jScrollPane2, java.awt.BorderLayout.CENTER);
+        jPanel1.add(jScrollPane2, java.awt.BorderLayout.CENTER);
+
+        token.add(jPanel1, java.awt.BorderLayout.PAGE_START);
 
         principal.add(token);
 
@@ -115,7 +207,7 @@ public class DiccionarioToken extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new DiccionarioToken().setVisible(true);
+                //new DiccionarioToken().setVisible(true);
             }
         });
     }
@@ -123,6 +215,7 @@ public class DiccionarioToken extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel diccionario;
     private javax.swing.JTable diccionarioTable;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JPanel principal;

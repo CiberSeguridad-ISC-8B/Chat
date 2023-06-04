@@ -272,6 +272,7 @@ public class Codificacion {
     }
     
     public static int findValueInt(char chr){
+        diccionary();
         int numBuscado=-1;
 
         // Recorrer la Hashtable y buscar la clave asociada al valor buscado  

@@ -112,7 +112,13 @@ public class Encriptation {
     public static String arrayToString(String []values){
         return Arrays.toString(values);
     }
-    // Diccionario ayuda para encriptar y desencriptar 
+    
+    public static Hashtable<Character, Integer> getDicc(){
+        diccionary();
+        return c;
+    }
+    
+    // Diccionario ayuda para encriptar y desencriptar
     public static void diccionary(){
         
         c.put('B',0);
