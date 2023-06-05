@@ -365,7 +365,7 @@ public class Encriptation {
     private static void suffle(int ciclos){
         
             
-            Object obj[][]=new Object [vueltas][12];
+            Object obj[][]=new Object [vueltas+1][12];
             
             
             String columnas[]={"Dir","Pos","0","1","2","3","4","5","6","7","8","9"};
@@ -425,9 +425,12 @@ public class Encriptation {
                         obj[i][1] = pos;
                     }
             }
-           
+            
             formatPretty();
         }
+        // Mostrar en la tabla del vector random de codigo ASCII el número de vueltas
+        obj[vueltas][0]="Numero de\nvueltas --> ";
+        obj[vueltas][1]=vueltas;
         tablaEncryp.setModel(new DefaultTableModel(obj,columnas));
     }
 }
