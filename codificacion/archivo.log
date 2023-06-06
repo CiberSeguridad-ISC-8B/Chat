@@ -1307,6 +1307,7 @@
 2023-06-04 01:28:45,664 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
 2023-06-04 01:28:45,665 [main] ERROR frames.Chat - El socket no se creo correctamente. 
 2023-06-04 01:28:45,665 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+<<<<<<< HEAD
 >>>>>>> bc81051ae0f253dc29296d5f023c20c85f204978
 2023-06-05 21:49:12,201 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
 2023-06-05 21:51:00,239 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
@@ -1325,3 +1326,8 @@
 2023-06-05 22:17:05,243 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
 2023-06-05 22:18:56,869 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
 2023-06-05 22:20:06,261 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
+=======
+2023-06-05 21:50:46,312 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: JuCa.
+2023-06-05 21:54:44,593 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: JuCa.
+2023-06-05 22:02:58,853 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: JuCa.
+>>>>>>> 7ccfc856980e2a2c3b3f7fbf8a954d6df25e591b

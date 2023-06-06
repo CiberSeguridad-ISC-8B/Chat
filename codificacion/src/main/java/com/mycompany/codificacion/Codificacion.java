@@ -172,7 +172,7 @@ public class Codificacion {
     
     // Poner el vector original revuelto de manera aleatoria en la encriptación 
     public static void vectorRan(){
-        Object [][]objRan = new Object[ vueltas ][ 12 ];
+        Object [][]objRan = new Object[ vueltas+1 ][ 12 ];
         String col[]={"Dir","Pos","0","1","2","3","4","5","6","7","8","9"};
         
         for(int i = 0; i<vueltas; i++){
@@ -228,6 +228,8 @@ public class Codificacion {
                 }
             formatPretty();
         }
+        objRan[vueltas][0]="Numero de\nvueltas --> ";
+        objRan[vueltas][1]=vueltas;
         suffleReverse.setModel(new DefaultTableModel(objRan,col));
     }
     
