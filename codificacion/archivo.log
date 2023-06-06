@@ -1031,3 +1031,19 @@
 2023-06-03 18:02:09,624 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: JuCa.
 2023-06-03 18:03:37,116 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: JuCa.
 >>>>>>> 82f01b300a93e9c2d810ba6e5945d31ee476e427
+2023-06-03 20:16:08,703 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-06-03 20:17:16,488 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-06-03 20:19:24,033 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-06-03 20:19:24,100 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection refused: connect).
+2023-06-03 20:19:24,104 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-06-03 20:19:24,107 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-06-03 20:19:24,108 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-06-03 20:19:47,803 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-06-03 20:19:59,858 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Cris.
+2023-06-03 20:20:00,051 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-06-03 20:20:00,055 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-06-03 20:20:18,989 [main] INFO  frames.Chat - Quieres conectarte a localhost en el puerto 1234 con el nombre de ususario: Juan.
+2023-06-03 20:20:19,063 [main] INFO  sockets.Server - Cliente con la IP 127.0.0.1 conectado.
+2023-06-03 20:20:19,064 [main] INFO  sockets.Server - Servidor a la espera de conexiones.
+2023-06-03 20:22:24,577 [Thread-1] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
+2023-06-03 20:22:26,052 [Thread-0] INFO  sockets.ClientConnection - Cliente con la IP 127.0.0.1 desconectado.
