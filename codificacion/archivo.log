@@ -1285,3 +1285,13 @@
 2023-06-04 01:28:45,664 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
 2023-06-04 01:28:45,665 [main] ERROR frames.Chat - El socket no se creo correctamente. 
 2023-06-04 01:28:45,665 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-06-05 10:47:45,713 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: s.
+2023-06-05 10:48:06,839 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection timed out: connect).
+2023-06-05 10:48:06,842 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-06-05 10:48:06,843 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-06-05 10:48:06,844 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-06-05 21:51:34,904 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Sam.
+2023-06-05 21:54:47,050 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Sam.
+2023-06-05 22:01:38,699 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: sam.
+2023-06-05 22:04:28,956 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Sam.
+2023-06-05 22:05:58,536 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Sam.
