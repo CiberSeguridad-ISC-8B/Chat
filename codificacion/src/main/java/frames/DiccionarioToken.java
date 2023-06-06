@@ -6,6 +6,10 @@ package frames;
 
 import static com.mycompany.codificacion.Encriptation.c;
 import static com.mycompany.codificacion.Codificacion.findValueInt;
+import java.awt.Font;
+import java.awt.FontFormatException;
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.Map;
@@ -26,6 +30,12 @@ public class DiccionarioToken extends javax.swing.JFrame {
     
     public DiccionarioToken(Hashtable<Character, Integer> c, ArrayList<Integer> vecPosTrash, ArrayList<Integer> vecDirTrash, String textTrash, int vueltas) {
         initComponents();
+        
+         Font customFont = loadFont("src/main/java/fonts/PressStart2P-Regular.ttf", Font.PLAIN, 12);
+         diccionarioTable.setFont(customFont);
+         tokenTable.setFont(customFont);
+         
+        
         //diccionary();
         Object objDicc[][] = new Object [ c.size() ][2];                
         String colDicc[]={"Caracter [Key]","Número [Value]"};
@@ -103,7 +113,16 @@ public class DiccionarioToken extends javax.swing.JFrame {
         
         //System.out.println(c.get('@'));
     }*/
-
+      private Font loadFont(String path, int style, int size) {
+        try {
+            Font customFont = Font.createFont(Font.TRUETYPE_FONT, new File(path));
+            return customFont.deriveFont(style, size);
+        } catch (FontFormatException | IOException ex) {
+            ex.printStackTrace();
+            // Manejar el error de carga de la fuente
+            return null; // o puedes utilizar una fuente de respaldo
+        }
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -125,12 +144,15 @@ public class DiccionarioToken extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         principal.setBackground(new java.awt.Color(0, 0, 0));
-        principal.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEmptyBorder(20, 30, 20, 30), "Diccionario y Token", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(51, 255, 51))); // NOI18N
+        principal.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEmptyBorder(20, 30, 20, 30), "DICCIONARIO Y TOKEN", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Bodoni MT Black", 1, 10), new java.awt.Color(51, 255, 51))); // NOI18N
         principal.setLayout(new javax.swing.BoxLayout(principal, javax.swing.BoxLayout.LINE_AXIS));
 
-        diccionario.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Diccionario", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(51, 255, 51))); // NOI18N
+        diccionario.setBackground(new java.awt.Color(0, 0, 0));
+        diccionario.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "DICCIONARIO", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Bodoni MT Black", 1, 10), new java.awt.Color(51, 255, 51))); // NOI18N
         diccionario.setLayout(new java.awt.BorderLayout());
 
+        diccionarioTable.setBackground(new java.awt.Color(0, 0, 0));
+        diccionarioTable.setForeground(new java.awt.Color(51, 255, 0));
         diccionarioTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -148,11 +170,14 @@ public class DiccionarioToken extends javax.swing.JFrame {
 
         principal.add(diccionario);
 
-        token.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Token", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(51, 255, 51))); // NOI18N
+        token.setBackground(new java.awt.Color(0, 0, 0));
+        token.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "TOKEN", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Bodoni MT Black", 1, 10), new java.awt.Color(51, 255, 51))); // NOI18N
         token.setLayout(new java.awt.BorderLayout());
 
         jPanel1.setLayout(new java.awt.BorderLayout());
 
+        tokenTable.setBackground(new java.awt.Color(0, 0, 0));
+        tokenTable.setForeground(new java.awt.Color(51, 255, 0));
         tokenTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -222,4 +247,6 @@ public class DiccionarioToken extends javax.swing.JFrame {
     private javax.swing.JPanel token;
     private javax.swing.JTable tokenTable;
     // End of variables declaration//GEN-END:variables
+
+    
 }

@@ -1308,6 +1308,7 @@
 2023-06-04 01:28:45,665 [main] ERROR frames.Chat - El socket no se creo correctamente. 
 2023-06-04 01:28:45,665 [main] ERROR frames.Chat - El socket no se creo correctamente. 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> bc81051ae0f253dc29296d5f023c20c85f204978
 2023-06-05 21:49:12,201 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
 2023-06-05 21:51:00,239 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
@@ -1332,3 +1333,16 @@
 2023-06-05 22:02:58,853 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: JuCa.
 >>>>>>> 7ccfc856980e2a2c3b3f7fbf8a954d6df25e591b
 2023-06-05 22:40:31,090 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Cris.
+=======
+2023-06-05 10:47:45,713 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: s.
+2023-06-05 10:48:06,839 [main] ERROR frames.Chat - No se ha podido conectar con el servidor (Connection timed out: connect).
+2023-06-05 10:48:06,842 [main] ERROR sockets.ServerConnection - El socket no se creo correctamente. 
+2023-06-05 10:48:06,843 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-06-05 10:48:06,844 [main] ERROR frames.Chat - El socket no se creo correctamente. 
+2023-06-05 21:51:34,904 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Sam.
+2023-06-05 21:54:47,050 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Sam.
+2023-06-05 22:01:38,699 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: sam.
+2023-06-05 22:04:28,956 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Sam.
+2023-06-05 22:05:58,536 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Sam.
+2023-06-05 22:09:23,926 [main] INFO  frames.Chat - Quieres conectarte a 74.235.27.103 en el puerto 1234 con el nombre de ususario: Sam.
+>>>>>>> sam
