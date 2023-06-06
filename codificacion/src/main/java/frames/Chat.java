@@ -62,6 +62,9 @@ public class Chat extends javax.swing.JFrame {
      * Creates new form Chat
      */
     public Chat() {
+         ImageIcon icon = new ImageIcon("src/main/java/img/iconPrincipal.png");  
+        // Establecer el ícono de la aplicación
+        this.setIconImage(icon.getImage());
         initComponents();
         inicia();
         this.setSize(640, 240);
@@ -93,14 +96,7 @@ public class Chat extends javax.swing.JFrame {
         enviar.setPreferredSize(new Dimension(100, 50));
         enviar.setBorder(BorderFactory.createLineBorder(Color.BLACK, 4));
         enviar.setBackground(Color.green);
-        enviar.addActionListener(new ActionListener() {
-            
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                setVisible(false);
-                
-            }
-        });
+      
         
         enviar.setRolloverEnabled(true);
         enviar.getModel().addChangeListener(e -> {
@@ -145,14 +141,6 @@ public class Chat extends javax.swing.JFrame {
         
         
         btnDicTok.setBackground(Color.green);
-        btnDicTok.addActionListener(new ActionListener() {
-            
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                setVisible(false);
-                
-            }
-        });
         
         btnDicTok.setRolloverEnabled(true);
         btnDicTok.getModel().addChangeListener(e -> {
